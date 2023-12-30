@@ -1,0 +1,3 @@
+# Ignorer les fichiers source map de Bootstrap
+/assets/css/bootstrap*.map
+/assets/js/bootstrap*.map
