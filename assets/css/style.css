@@ -8,7 +8,14 @@
         font-family: "roboto",Arial, Helvetica, sans-serif;
         scroll-behavior: smooth;
     }
-
+     /*----- START VARIABLE----- */
+    :root {
+        /* color */
+        --color-header: #586654;
+        /* size */
+        --size-h1: 1.8rem;
+    }
+    /* ----- END VARIABLE -------*/
     body {
         overflow-x: hidden;
         max-width: 1920px;
@@ -33,7 +40,7 @@
     h1{
         display: flex;
         justify-content: center;
-        font-size: 1.8rem!important;
+        font-size: var(--size-h1)!important;
     }
     .nav-link {
         font-size: 1.35rem;
