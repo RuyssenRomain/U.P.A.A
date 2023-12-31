@@ -1,11 +1,14 @@
  /*----- START VARIABLE----- */
+
     :root {
         /* color */
         --color-header: #586654;
         --color-burger-menu: #8B572A;
+        --color-navbar-toggler-focus:var(--color-burger-menu);
         /* size */
         --size-h1: 1.8rem;
     }
+    
     /* ----- END VARIABLE -------*/
     body {
         overflow-x: hidden;
@@ -32,12 +35,33 @@
         display: flex;
         justify-content: center;
         font-size: var(--size-h1)!important;
+        color:var(--color-burger-menu);
     }
+    
     .nav-link {
         font-size: 1.35rem;
     }
 
     /* menu-burger */
-    navbar-toggler-icon {
-        background-image: var(--color-burger-menu)!important;
+    .burger{
+        border: 2px solid var(--color-burger-menu)
+    }
+    .burger:focus {
+        box-shadow: none;
+    }
+    
+    .offcanvas-body{
+        background-color: var(--color-burger-menu); /* Votre couleur marron */
+    }
+   
+    .logo-fede{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        height: 46%;
+        border: none;
+    }
+    .logo-fede img {
+        width: 100%;
     }
