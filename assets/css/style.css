@@ -154,10 +154,16 @@
     /*---menu-burger end------*/
 
     /*-----start main---------*/
+       
 
-        .bg-custom{ /*test de la class a remodifier*/
-            height: 80vh;
-            background-color: var(--color-header);
-            clip-path: polygon(0 0, 100% 0, 100% 50%, 61% 92%, 44% 81%, 0% 50%);
+/* start: background derriere header et slider */
+
+        .bg-custom {
+            width: 100%;
+            height: 50%;
+            background-color: #586654;
+            clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
         }
+/* start: slider */
+
     /*-----end main---------*/
