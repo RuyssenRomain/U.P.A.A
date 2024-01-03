@@ -58,7 +58,7 @@
         .navbar-nav .nav-link.active {
             position: relative;
             color: var(--color-burger-text);
-            transition: transform 0.32s ease-in-out;
+            transition: transform 0.42s ease-in-out;
         }
 
 /*------menu open -------------------------------------*/
