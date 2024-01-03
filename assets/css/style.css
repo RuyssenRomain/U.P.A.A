@@ -3,7 +3,8 @@
     :root {
         /* color */
         --color-header: #586654;
-        --color-burger-menu: #8B572A;
+        --color-burger-menu: #543525;
+        --color-offcanvas-tittle :#363636 ;
         --color-burger-text: #FFB26F;
         /* size */
         --size-h1: clamp(1.2rem, 9vw, 1.8rem);
@@ -43,7 +44,7 @@
     .nav-link {
         font-size: 1.35rem;
     }
-
+    
     /* menu-burger */
     .burger{
         border: 2px solid var(--color-burger-menu);/*color a modifier*/
@@ -51,7 +52,13 @@
     .burger:focus {
         box-shadow: none;
     }
-    /*menu open */
+    /*------menu open ------*/
+  
+    @media (max-width: 1200px) { 
+        .navbar-toggler:not(.collapsed) ~ .offcanvas-end .offcanvas-body {
+            background-color: var(--color-header);
+        }
+    } /* sizepourh1 changer/ color text burger menu / repo chgment de la couleur de ofcanvas sur le fond uniquement en ouverture bouton / add href sur le <a> de index.html */
 
     @media screen and (max-width: 500px) {
         .custom-offcanvas{
@@ -59,19 +66,19 @@
         }    
     }
 
-    .offcanvas-body {
-        background-color: transparent;
+    .offcanvas-header {
+        background-color: #e5e6db;
     }
 
-    @media (max-width: 1200px) { 
-        .navbar-toggler:not(.collapsed) ~ .offcanvas-end .offcanvas-body {
-            background-color: var(--color-header);
-        }
-    } /* sizepourh1 changer/ color text burger menu / repo chgment de la couleur de ofcanvas sur le fond uniquement en ouverture bouton / add href sur le <a> de index.html */
+    .offcanvas-body {
+        position: relative;
+        /* background-color: transparent; */
+    }
+
     
     .offcanvas-title {
         /*changer couleur text et background*/
-        color: black;
+        color: var(--color-offcanvas-tittle);
     }
     .navbar-nav .nav-link,
     .navbar-nav .nav-link.active {
@@ -79,16 +86,22 @@
     }
     /*penser a faire les effets hover pour le menu navigation*/
     .logo-fede{
-        position: relative;/*rectifier les position pour affichage poisson */
+        position: absolute;
         width: 100%;
-        top: 50%;
+        top: 45%;
         left:0;
-        height: 46%;
+        height: 100%;
         border: none;
     }
     .logo-fede img {
-        position: absolute;
         width: 100%;
+        filter: opacity(0.5);
+    }
+    @media screen and (max-width: 357px) {
+        .logo-fede {
+            top: 50%;
+        }
+        
     }
     /*---menu-burger end------*/
 
