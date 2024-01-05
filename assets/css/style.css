@@ -3,8 +3,11 @@
         :root {
             /* color */
             --color-header: #586654;
+            --color-header-opacity: rgba(88, 102, 84, 0.9);
             --color-burger-menu: #543525;
-            --color-offcanvas-tittle :#363636 ;
+            --color-offcanvas-header:rgba(229, 230, 219, 0.998) ;
+            --color-offcanvas-tittle :#363636;
+            --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
             --color-burger-text: #FFB26F;
             /* size */
             --size-h1: clamp(1.2rem, 9vw, 1.8rem);
@@ -28,9 +31,6 @@
         }
 
 /* ----------------START HEADER ------------- */
-        header {
-                height: 100%;
-            }
             .logo {
                 width: clamp(4rem, 10vw, 8rem);
             }
@@ -43,6 +43,11 @@
             margin-bottom: 0!important;
         }
         
+        .navbar {
+            background-color: var(--color-header-opacity);
+            
+        }
+
         .nav-link {
             font-size: 1.35rem;
         }
@@ -76,7 +81,7 @@
         }
 
         .offcanvas-header {
-            background-color: #e5e6db;
+            background-color: var(--color-offcanvas-header);
         }
 
         .offcanvas-title {
@@ -95,8 +100,7 @@
             left: 3%;
             transform: scale(0);
             height: 2px;
-            background-color: #FFB26F;
-            color: #FFB26F;
+            background-color: var(--color-burger-text);     
             transition: transform 0.52s ease-in-out;
             transform-origin: center;
         }   
@@ -151,19 +155,70 @@
             width: 100%;
             filter: opacity(0.5);
         }
-    /*---menu-burger end------*/
+/* end : effet hover sur menu navigation--------------------------*/
 
-    /*-----start main---------*/
-       
+/*---menu-burger end------*/
 
+/*-----start main---------*/
+    
 /* start: background derriere header et slider */
 
         .bg-custom {
-            width: 100%;
-            height: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 65%;
             background-color: #586654;
             clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
+            /* clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 0 54%, 0 0); */
         }
-/* start: slider */
 
-    /*-----end main---------*/
+/* start: slider--------------- */
+        .carousel {
+            opacity: 0.2;
+            top: clamp(6.5rem, 16vw, 10rem);
+            left: 0;
+            width:48%;
+            height: 100%;
+        }
+
+        @media screen and (max-width:1200px) {
+            .carousel {
+                width:50%;
+               
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .carousel {
+                width: 54%;
+               
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .carousel {
+                width:64%;
+               
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .carousel {
+                width:74%;
+               
+            }
+        }
+        
+        @media screen and (max-width:450px) {
+            .carousel {
+                width:90%;
+               
+            }
+        }
+
+
+/* end: slider -----------------*/
+
+/*-----end main---------------------------------------------------*/
