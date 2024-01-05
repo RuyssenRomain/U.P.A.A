@@ -10,7 +10,10 @@
             --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
             --color-burger-text: #FFB26F;
             /* size */
-            --size-h1: clamp(1.2rem, 9vw, 1.8rem);
+            --size-h1: clamp(1.45rem, 4vw, 1.8rem);
+            --size-h2: clamp(1.2rem, 4vw, 1.35rem);
+            --size-h2-slider:clamp(0.9rem, 2.9vw, 1.7rem);
+            --size-P:clamp(0.625rem, 2.9vw, 1.15rem);
         }
         
 /* ----- END VARIABLE -------*/
@@ -86,6 +89,7 @@
 
         .offcanvas-title {
             color: var(--color-offcanvas-tittle);
+            font-size: var(--size-h2)!important
         }
         
 /* START : effet hover sur menu navigation--------------------------*/
@@ -171,12 +175,10 @@
             height: 65%;
             background-color: #586654;
             clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
-            /* clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 0 54%, 0 0); */
         }
 
 /* start: slider--------------- */
         .carousel {
-            opacity: 0.2;
             top: clamp(6.5rem, 16vw, 10rem);
             left: 0;
             width:48%;
@@ -210,12 +212,33 @@
                
             }
         }
-        
+
         @media screen and (max-width:450px) {
             .carousel {
                 width:90%;
                
             }
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 31%;
+            font-size: var(--size-P);
+            background-color: rgba(0, 0, 0, 0.55);
+            color: white;
+        }
+
+        @media screen and (max-width: 500px) {
+            .carousel-caption {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }           
+        }
+        .carousel-caption h2 {
+            font-size: var(--size-h2-slider)!important;
         }
 
 
