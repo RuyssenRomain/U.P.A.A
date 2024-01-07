@@ -92,6 +92,9 @@
             font-size: var(--size-h2)!important
         }
         
+        .nav-link {
+            font-size: var(--size-h2)!important;
+        }
 /* START : effet hover sur menu navigation--------------------------*/
 
 /* START : création line en dessous menu navigation---*/
@@ -240,6 +243,27 @@
         .carousel-caption h2 {
             font-size: var(--size-h2-slider)!important;
         }
+
+        .custom-btn {
+            color: white;/* faire rectif a partir d ici*/
+            border-color: white;
+            background-color: transparent;
+            padding: 0.5rem 1rem; 
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+          .custom-btn:hover{
+            color: white;
+            box-shadow: 0 0 10px white;
+          }
+          .custom-btn:focus, .custom-btn:active {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; /* Ombre interne pour effet d'enfoncement */
+            transform: translateY(0.9px);/* Déplace légèrement le bouton vers le bas */
+          }
+          /*penser a faire la size au btn slider responsive */
 
 
 /* end: slider -----------------*/
