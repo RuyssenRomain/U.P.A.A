@@ -9,10 +9,12 @@
             --color-offcanvas-tittle :#363636;
             --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
             --color-burger-text: #FFB26F;
+            --color-txt-slider:#F2F2F2;
             /* size */
             --size-h1: clamp(1.45rem, 4vw, 1.8rem);
             --size-h2: clamp(1.2rem, 4vw, 1.35rem);
             --size-h2-slider:clamp(0.9rem, 2.9vw, 1.7rem);
+            --size-btn-slider:clamp(0.6rem, 3.1vw, 1rem);
             --size-P:clamp(0.625rem, 2.9vw, 1.15rem);
         }
         
@@ -55,7 +57,7 @@
             font-size: 1.35rem;
         }
         
-/* menu-burger---------------------------------------------- */
+/*  START menu-burger------------------------------------------------------------ */
         .burger{
             border: 2px solid var(--color-burger-menu);
         }
@@ -163,10 +165,11 @@
             filter: opacity(0.5);
         }
 /* end : effet hover sur menu navigation--------------------------*/
+/* end : menu open ------------------------------------------------*/
+/*---menu-burger end--------------------------------------------------*/
 
-/*---menu-burger end------*/
 
-/*-----start main---------*/
+/*-----start main------------------------------------------------------*/
     
 /* start: background derriere header et slider */
 
@@ -179,8 +182,9 @@
             background-color: #586654;
             clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
         }
+/* end: background derriere header et slider */
 
-/* start: slider--------------- */
+/* start: slider--------------------------------------------------------------- */
         .carousel {
             top: clamp(6.5rem, 16vw, 10rem);
             left: 0;
@@ -204,7 +208,13 @@
 
         @media screen and (max-width:900px) {
             .carousel {
-                width:64%;
+                width:58%;
+               
+            }
+        }
+        @media screen and (max-width:780px) {
+            .carousel {
+                width:75%;
                
             }
         }
@@ -231,41 +241,58 @@
             height: 31%;
             font-size: var(--size-P);
             background-color: rgba(0, 0, 0, 0.55);
-            color: white;
+            color: var(--color-txt-slider);
         }
 
-        @media screen and (max-width: 500px) {
-            .carousel-caption {
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-            }           
-        }
         .carousel-caption h2 {
+            text-decoration: underline;
             font-size: var(--size-h2-slider)!important;
         }
 
+        .custom-slider1 {
+            width: clamp(60%, 2.9vw, 90%);
+        }
+
+        /*pour permettre de passer au dessus de la class carousel-control-prev pour avoir 100% du hover */
+        #hover-effect {
+            position: relative;
+            z-index:1050;
+        }
+        #hover-effect:hover {
+            box-shadow: 0 0 10px var(--color-txt-slider);
+            border-radius: 25px;
+
+        }
         .custom-btn {
-            color: white;/* faire rectif a partir d ici*/
-            border-color: white;
+            color: var(--color-txt-slider);/* faire rectif a partir d ici*/
+            border-color: var(--color-txt-slider);
             background-color: transparent;
             padding: 0.5rem 1rem; 
             border-radius: 25px;
             transition: all 0.3s ease;
-            font-size: 1rem;
+            font-size: var(--size-btn-slider);
         }
+        
+        @media screen and (max-width: 625px) {
+            .custom-btn {
+                padding: 0.25rem 0.5rem;
+            }
+        }
+
           .custom-btn:hover{
-            color: white;
-            box-shadow: 0 0 10px white;
+            color: var(--color-txt-slider);
           }
           .custom-btn:focus, .custom-btn:active {
-            color: white;
-            background-color: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; /* Ombre interne pour effet d'enfoncement */
-            transform: translateY(0.9px);/* Déplace légèrement le bouton vers le bas */
+            color: var(--color-txt-slider);
+            background-color: rgba(22, 10, 10, 0.089);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; 
+            transform: translateY(0.9px);
           }
-          /*penser a faire la size au btn slider responsive */
+         /*pour permettre d'avoir un hover et clicker sur le button*/
+          .carousel-control-next {
+            position: relative;
+            z-index: 1000;
+          }
+/* end: slider -------------------------------------------------------------*/
 
-
-/* end: slider -----------------*/
-
-/*-----end main---------------------------------------------------*/
+/*-----end main-------------------------------------------------------------*/
