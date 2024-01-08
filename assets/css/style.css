@@ -3,11 +3,19 @@
         :root {
             /* color */
             --color-header: #586654;
+            --color-header-opacity: rgba(88, 102, 84, 0.9);
             --color-burger-menu: #543525;
-            --color-offcanvas-tittle :#363636 ;
+            --color-offcanvas-header:rgba(229, 230, 219, 0.998) ;
+            --color-offcanvas-tittle :#363636;
+            --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
             --color-burger-text: #FFB26F;
+            --color-txt-slider:#F2F2F2;
             /* size */
-            --size-h1: clamp(1.2rem, 9vw, 1.8rem);
+            --size-h1: clamp(1.45rem, 4vw, 1.8rem);
+            --size-h2: clamp(1.2rem, 4vw, 1.35rem);
+            --size-h2-slider:clamp(0.89rem, 2.5vw, 1.7rem);
+            --size-btn-slider:clamp(0.6rem, 3.1vw, 1rem);
+            --size-P:clamp(0.625rem, 2.2vw, 1.15rem);
         }
         
 /* ----- END VARIABLE -------*/
@@ -28,9 +36,6 @@
         }
 
 /* ----------------START HEADER ------------- */
-        header {
-                height: 100%;
-            }
             .logo {
                 width: clamp(4rem, 10vw, 8rem);
             }
@@ -43,11 +48,16 @@
             margin-bottom: 0!important;
         }
         
+        .navbar {
+            background-color: var(--color-header-opacity);
+            
+        }
+
         .nav-link {
             font-size: 1.35rem;
         }
         
-/* menu-burger---------------------------------------------- */
+/*  START menu-burger------------------------------------------------------------ */
         .burger{
             border: 2px solid var(--color-burger-menu);
         }
@@ -76,13 +86,17 @@
         }
 
         .offcanvas-header {
-            background-color: #e5e6db;
+            background-color: var(--color-offcanvas-header);
         }
 
         .offcanvas-title {
             color: var(--color-offcanvas-tittle);
+            font-size: var(--size-h2)!important
         }
         
+        .nav-link {
+            font-size: var(--size-h2)!important;
+        }
 /* START : effet hover sur menu navigation--------------------------*/
 
 /* START : création line en dessous menu navigation---*/
@@ -95,8 +109,7 @@
             left: 3%;
             transform: scale(0);
             height: 2px;
-            background-color: #FFB26F;
-            color: #FFB26F;
+            background-color: var(--color-burger-text);     
             transition: transform 0.52s ease-in-out;
             transform-origin: center;
         }   
@@ -151,19 +164,150 @@
             width: 100%;
             filter: opacity(0.5);
         }
-    /*---menu-burger end------*/
+/* end : effet hover sur menu navigation--------------------------*/
+/* end : menu open ------------------------------------------------*/
+/*---menu-burger end--------------------------------------------------*/
 
-    /*-----start main---------*/
-       
 
+/*-----start main------------------------------------------------------*/
+    
 /* start: background derriere header et slider */
 
         .bg-custom {
-            width: 100%;
-            height: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 65%;
             background-color: #586654;
             clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
         }
-/* start: slider */
+/* end: background derriere header et slider */
 
-    /*-----end main---------*/
+/* start: slider--------------------------------------------------------------- */
+        .carousel {
+            top: clamp(6.5rem, 16vw, 10rem);
+            left: 0;
+            width:48%;
+            height: 100%;
+        }
+
+        @media screen and (max-width:1200px) {
+            .carousel {
+                width:50%;
+               
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .carousel {
+                width: 54%;
+               
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .carousel {
+                width:58%;
+               
+            }
+        }
+        @media screen and (max-width:780px) {
+            .carousel {
+                width:75%;
+               
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .carousel {
+                width:74%;
+               
+            }
+        }
+
+        @media screen and (max-width:450px) {
+            .carousel {
+                width:90%;
+               
+            }
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 31%;
+            font-size: var(--size-P);
+            background-color: rgba(0, 0, 0, 0.55);
+            color: var(--color-txt-slider);
+        }
+    
+        .custom-slider {
+            width: clamp(60%, 2.9vw, 90%);
+        }
+
+/*application custom sur tout les titres du slider*/
+        .title-caption {
+            text-decoration: underline;
+            font-size: var(--size-h2-slider);
+        }
+        
+        .container-btn {
+            position: relative;
+            z-index:1050;
+            width: 38%;
+        }
+
+        .custom-btn {
+            color: var(--color-txt-slider);/* faire rectif a partir d ici*/
+            border-color: var(--color-txt-slider);
+            background-color: transparent;
+            padding: 0.5rem 1rem; 
+            border-radius: 25px;
+            transition: all 0.25s ease;
+            font-size: var(--size-btn-slider);
+            box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media screen and (max-width: 625px) {
+            .custom-btn {
+                padding: 0.25rem 0.5rem;
+            }
+        }
+
+          .custom-btn:hover{
+            box-shadow: 0 0px 4px var(--color-txt-slider);
+            border-radius: 25px;
+          }
+          .custom-btn:focus, .custom-btn:active {
+            background-color: rgba(22, 10, 10, 0.089);;
+            box-shadow: 0 3px 2px rgba(0, 0, 0, 0.55) inset, 0 0px 5px  var(--color-txt-slider);
+            transform: translateY(1.5px);
+          }
+          
+/*pour éviter la supperposition pour hover fonctionnel dans sa totalité*/
+         .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            right: 0;
+            height: 37%;
+            z-index: 1;
+        }
+         .carousel-control-prev {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            left: 0;
+            height: 37%;
+            z-index: 1;
+        }
+       .size-arrow {
+        width: 69%;
+        height: 69%;
+       }
+/* end: slider -------------------------------------------------------------*/
+
+/*-----end main-------------------------------------------------------------*/
