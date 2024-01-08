@@ -13,9 +13,9 @@
             /* size */
             --size-h1: clamp(1.45rem, 4vw, 1.8rem);
             --size-h2: clamp(1.2rem, 4vw, 1.35rem);
-            --size-h2-slider:clamp(0.9rem, 2.9vw, 1.7rem);
+            --size-h2-slider:clamp(0.89rem, 2.5vw, 1.7rem);
             --size-btn-slider:clamp(0.6rem, 3.1vw, 1rem);
-            --size-P:clamp(0.625rem, 2.9vw, 1.15rem);
+            --size-P:clamp(0.625rem, 2.2vw, 1.15rem);
         }
         
 /* ----- END VARIABLE -------*/
@@ -243,34 +243,32 @@
             background-color: rgba(0, 0, 0, 0.55);
             color: var(--color-txt-slider);
         }
-
-        .carousel-caption h2 {
-            text-decoration: underline;
-            font-size: var(--size-h2-slider)!important;
-        }
-
-        .custom-slider1 {
+    
+        .custom-slider {
             width: clamp(60%, 2.9vw, 90%);
         }
 
-        /*pour permettre de passer au dessus de la class carousel-control-prev pour avoir 100% du hover */
-        #hover-effect {
+/*application custom sur tout les titres du slider*/
+        .title-caption {
+            text-decoration: underline;
+            font-size: var(--size-h2-slider);
+        }
+        
+        .container-btn {
             position: relative;
             z-index:1050;
+            width: 38%;
         }
-        #hover-effect:hover {
-            box-shadow: 0 0 10px var(--color-txt-slider);
-            border-radius: 25px;
 
-        }
         .custom-btn {
             color: var(--color-txt-slider);/* faire rectif a partir d ici*/
             border-color: var(--color-txt-slider);
             background-color: transparent;
             padding: 0.5rem 1rem; 
             border-radius: 25px;
-            transition: all 0.3s ease;
+            transition: all 0.25s ease;
             font-size: var(--size-btn-slider);
+            box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
         }
         
         @media screen and (max-width: 625px) {
@@ -280,19 +278,36 @@
         }
 
           .custom-btn:hover{
-            color: var(--color-txt-slider);
+            box-shadow: 0 0px 4px var(--color-txt-slider);
+            border-radius: 25px;
           }
           .custom-btn:focus, .custom-btn:active {
-            color: var(--color-txt-slider);
-            background-color: rgba(22, 10, 10, 0.089);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset; 
-            transform: translateY(0.9px);
+            background-color: rgba(22, 10, 10, 0.089);;
+            box-shadow: 0 3px 2px rgba(0, 0, 0, 0.55) inset, 0 0px 5px  var(--color-txt-slider);
+            transform: translateY(1.5px);
           }
-         /*pour permettre d'avoir un hover et clicker sur le button*/
-          .carousel-control-next {
-            position: relative;
-            z-index: 1000;
-          }
+          
+/*pour éviter la supperposition pour hover fonctionnel dans sa totalité*/
+         .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            right: 0;
+            height: 37%;
+            z-index: 1;
+        }
+         .carousel-control-prev {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            left: 0;
+            height: 37%;
+            z-index: 1;
+        }
+       .size-arrow {
+        width: 69%;
+        height: 69%;
+       }
 /* end: slider -------------------------------------------------------------*/
 
 /*-----end main-------------------------------------------------------------*/
