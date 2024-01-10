@@ -3,13 +3,16 @@
         :root {
             /* color */
             --color-header: #586654;
-            --color-header-opacity: rgba(88, 102, 84, 0.9);
+            --color-header-opacity: rgba(88, 102, 84, 1);
             --color-burger-menu: #543525;
             --color-offcanvas-header:rgba(229, 230, 219, 0.998) ;
             --color-offcanvas-tittle :#363636;
             --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
             --color-burger-text: #FFB26F;
+            --color-bg-main: #e7e7e7e6
+            /* start: background derriere header et slider */;
             --color-txt-slider:#F2F2F2;
+            --color-bg-sect-1 : #6e8be2;
             /* size */
             --size-h1: clamp(1.45rem, 4vw, 1.8rem);
             --size-h2: clamp(1.2rem, 4vw, 1.35rem);
@@ -170,7 +173,9 @@
 
 
 /*-----start main------------------------------------------------------*/
-    
+    main {
+        background-color: var(--color-bg-main);
+    }
 /* start: background derriere header et slider */
 
         .bg-custom {
@@ -186,7 +191,7 @@
 
 /* start: slider--------------------------------------------------------------- */
         .carousel {
-            top: clamp(6.5rem, 16vw, 10rem);
+            top: clamp(6.5rem, 16vw, 9.6rem);
             left: 0;
             width:48%;
             height: 100%;
@@ -198,37 +203,45 @@
                
             }
         }
-
         @media screen and (max-width:1000px) {
             .carousel {
                 width: 54%;
                
             }
         }
-
+        @media screen and (max-width:970px) {
+            .carousel {
+                width: 57%;
+                
+            }
+        }
+        @media screen and (max-width:963px) {
+            .carousel {
+                width: 58%;
+               
+            }
+        }
         @media screen and (max-width:900px) {
             .carousel {
-                width:58%;
+                width:64%;
                
             }
         }
-        @media screen and (max-width:780px) {
+        @media screen and (max-width:862px) {
             .carousel {
-                width:75%;
+                width:68%;
                
             }
         }
-
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:756px) {
             .carousel {
-                width:74%;
+                width:76%;
                
             }
         }
-
-        @media screen and (max-width:450px) {
+        @media screen and (max-width:672px) {
             .carousel {
-                width:90%;
+                width: 90%;
                
             }
         }
@@ -304,10 +317,44 @@
             height: 37%;
             z-index: 1;
         }
-       .size-arrow {
-        width: 69%;
-        height: 69%;
-       }
+        .size-arrow {
+            width: 69%;
+            height: 69%;
+        }
 /* end: slider -------------------------------------------------------------*/
 
+/*start section 1 => plans d eau et réglementation */
+        .custom-svg {        
+        position: relative;
+        width: 100%;
+        top: 10rem;
+        }
+
+        @media screen and (max-width: 920px) {
+            .custom-svg {        
+                top: 9.8rem;
+                }
+        }
+
+       .water-container {
+        position: relative;
+        background-color: var(--color-bg-sect-1);
+        height: 100vh!important;
+        top: 9.7rem;
+        height: 100%!important;
+       }
+
+       .water-intro{
+        color: #363636;/* provisoire*/
+       }
+
+        .water-plans {
+            position: relative;
+            overflow: hidden;
+            color: red;
+        }
+        .card {
+            width: 18rem!important;
+            box-shadow:  2px 1px 9px 1px rgba(0, 0, 0, 0.57);
+        }
 /*-----end main-------------------------------------------------------------*/
