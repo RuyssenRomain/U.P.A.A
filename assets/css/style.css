@@ -21,7 +21,7 @@
             --size-title-slider: calc(1rem + 0.3vw);
             --size-btn-slider:clamp(0.625rem, 3.1vw, 1rem);
             --size-P-slider:clamp(1rem, 2.2vw, 1.15rem);
-            --size-title-2: calc(1.275rem + .3vw);
+            --size-title-2: calc(1.25rem + 1vw);
         }
         
 /* -------- END VARIABLE -----------------------*/
@@ -284,18 +284,6 @@
             width: 30%;
         }
 
-        /* .custom-btn {
-            position: relative;
-            color: var(--color-txt-slider);
-            border-color: var(--color-txt-slider);
-            background-color: transparent;
-            padding: 0.5rem 1rem; 
-            border-radius: 25px;
-            transition: all 0.25s ease;
-            font-size: var(--size-btn-slider);
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
-        } */
-
         .custom-btn {
             position: relative;
             color: var(--color-txt-slider);
@@ -309,6 +297,7 @@
             box-shadow: 0 0px 6px rgba(13, 13, 15, 0.1);
         }
 
+/* start  effet hover pour bouton ---*/
         .custom-btn::after {
             content: "";
             position: absolute;
@@ -325,6 +314,8 @@
             transform-origin: left;
             z-index: -1;
         }
+
+
         .custom-btn:hover::after {
             width: 100%;
             transform: scaleX(1);
@@ -347,7 +338,8 @@
             box-shadow:0 2px 6px rgba(0, 0, 0, 0.55) inset, 0 0px 10px  var(--color-txt-slider);
             transform: translateY(1px);
           }
-          
+/* End effet hover buton ----------*/
+
 /*pour éviter la supperposition pour hover fonctionnel dans sa totalité*/
          .carousel-control-next {
             position: absolute;
@@ -393,6 +385,7 @@
 
        .water-intro {
         color: #363636;/* provisoire*/
+        font-size: calc(1rem + 0.4vw);
        }
 
         .water-cards {
@@ -408,4 +401,19 @@
         .card-subtitle {
             font-size: calc(1rem + .3vw);
         }
+
+/*start effect hover cards-----------*/
+        .container-img {
+            overflow: hidden;
+        }
+
+        .card img {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card img:hover {
+            transform: scale(1.25);
+        }
+/*>End effect hover cards-----------*/
+
 /*-----end main-------------------------------------------------------------*/
