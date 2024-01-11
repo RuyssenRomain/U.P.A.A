@@ -419,7 +419,7 @@ main {
 
         @media screen and (min-width: 768px) {
             .card {
-                width: 45%!important;
+                width: 30%!important;
             }
         }
 
