@@ -42,8 +42,9 @@
 
 /*_________CLASS GENRERAL ______ END __________*/
     body {
-        overflow-x: hidden;
+        overflow: hidden;
         max-width: 1920px;
+        overflow: hidden!important;
     }
 
         h1,
@@ -112,6 +113,10 @@
         .offcanvas-title {
             color: var(--color-offcanvas-tittle);
             font-size: var(--size-h2-offcanvas)!important
+        }
+        .offcanvas-body {
+            overflow: hidden!important;
+         
         }
         
         .nav-link {
@@ -190,9 +195,9 @@
 
 
 /*-----start main------------------------------------------------------*/
-    main {
-        background-color: var(--color-bg-main);
-    }
+main {
+    background-color: var(--color-bg-main);
+}
 /* start: background derriere header et slider */
 
         .bg-custom {
