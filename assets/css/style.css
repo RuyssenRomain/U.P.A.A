@@ -467,9 +467,14 @@ main {
             border-color: var(--color-header)!important;
         }
 
+        .list-group-item span {
+            display: flex;
+            color: #0b0b0b;
+            font-weight: 600;
+        }
+        
         .card-link {
             font-size: calc(1.2rem + 0.2vw);
-            text-decoration: none;
         }
 /*>End effect hover btn -----------*/
 /* END : cards -----------------*/
