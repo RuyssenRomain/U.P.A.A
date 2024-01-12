@@ -476,6 +476,10 @@ main {
         .card-link {
             font-size: calc(1.2rem + 0.2vw);
         }
+        .bi {
+            position: relative;
+            left: 0;
+        }
 /*>End effect hover btn -----------*/
 /* END : cards -----------------*/
 /*-----end main-------------------------------------------------------------*/
