@@ -14,6 +14,7 @@
         --color-txt-slider:#F2F2F2;
         /* section-1*/
         --color-bg-sect-1 : #6e8be2;
+        --color-card-bg: rgb(234, 234, 227);
         --color-icon:#B197FC; 
 
         /* size */
@@ -425,6 +426,12 @@
             }
         }
 
+        .card-body,
+        .list-group
+        .list-group-item {
+            background-color: var(--color-card-bg);
+        }
+
         .card-title {
             font-size: calc(1.275rem + .3vw);
         }
@@ -470,17 +477,23 @@
             background-color: #2d6e80de;
             min-height: 5rem;
         }
+        
+        .color-item {
+            color: #0b0b0b;
+            font-weight: 800;
+        }
 
-        .fish-icon {
+        .fish-icon,
+        .lightbulb-icon,
+        .wheather-icon {
             font-size: var(--size-icons); 
+        }
+
+        .fish-icon,
+        .lightbulb-icon {
             color: var(--color-icon); 
         }
-        
-        .lightbulb-icon {
-            font-size: var(--size-icons); 
-            color: var(--color-icon);
-        }
-
+    
         .list-group-item span {
             display: flex;
             color: #0b0b0b;
@@ -497,13 +510,12 @@
         }
 
         .wheather-icon {
-            font-size: var(--size-icons); 
             color: #efa00b; 
         }
        
 
         
-     /*change color wheater-icon/ change-size container card header
+     /* comm git group icon css classes change bg color card-container and list-group item class color item change color list-item card penser a regrouper la couleurb */
 
 /* END : cards -----------------*/
 /*-----end main-------------------------------------------------------------*/
