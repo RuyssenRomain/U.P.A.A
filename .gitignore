@@ -1,3 +1,28 @@
+# Dépendances
+/node_modules/
+
+# Fichiers de configuration de l'IDE
+/.vscode/
+
+# Système d'exploitation
+# mac
+    .DS_Store
+
+# windows
+    Thumbs.db #windows
+
+# Cache de préprocesseur CSS
+.sass-cache/
+
+# Dossiers de build/production
+/dist/
+
+# Fichiers de log
+*.log
+
+# Fichiers d'environnement
+.env
+
 # Ignorer les fichiers source map de Bootstrap
 /assets/css/bootstrap*.map
 /assets/js/bootstrap*.map
