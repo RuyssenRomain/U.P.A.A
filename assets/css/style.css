@@ -1,38 +1,33 @@
 /*----- START VARIABLE----- */
 
-        :root {
-            /* color */
-            --color-header: #586654;
-            --color-header-opacity: rgba(88, 102, 84, 1);
-            --color-burger-menu: #543525;
-            --color-offcanvas-header:rgba(229, 230, 219, 0.998) ;
-            --color-offcanvas-tittle :#363636;
-            --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
-            --color-burger-text: #FFB26F;
-            --color-bg-main: #e7e7e7e6;
+    :root {
+        /* color */
+        --color-header: #586654;
+        --color-header-opacity: rgba(88, 102, 84, 1);
+        --color-burger-menu: #543525;
+        --color-offcanvas-header:rgba(229, 230, 219, 0.998) ;
+        --color-offcanvas-tittle :#363636;
+        --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
+        --color-burger-text: #FFB26F;
+        /* main */
+        --color-bg-main: #e7e7e7e6;
+        --color-txt-slider:#F2F2F2;
+        /* section-1*/
+        --color-bg-sect-1 : #6e8be2;
+        --color-icon:#B197FC; 
 
-            /* size */
-            --size-h1: calc(1.45rem + 0.8vw);
-            --size-h2-offcanvas: clamp(1.2rem, 4vw, 1.35rem);
-            --size-title-slider: calc(1rem + 0.3vw);
-            --size-btn-slider:clamp(0.625rem, 3.1vw, 1rem);
-            --size-P-slider:clamp(1rem, 2.2vw, 1.15rem);
-            --size-title-2: calc(1.25rem + 1vw);
-            --size-link: calc(1.2rem + 0.2vw);
-            
-
-            /* start: background derriere header et slider */
-            --color-txt-slider:#F2F2F2;
-
-            
-            /*  start: main-------*/
-            --color-bg-sect-1 : #6e8be2;
-            /*  end : main-------*/
-        
-        }
+        /* size */
+        --size-h1: calc(1.45rem + 0.8vw);
+        --size-h2-offcanvas: clamp(1.2rem, 4vw, 1.35rem);
+        --size-title-slider: calc(1rem + 0.3vw);
+        --size-btn-slider:clamp(0.625rem, 3.1vw, 1rem);
+        --size-P-slider:clamp(1rem, 2.2vw, 1.15rem);
+        --size-title-2: calc(1.25rem + 1vw);
+        --size-icons: 24px;  
+    }
 /* -------- END VARIABLE -----------------------*/
 
-/*-----CLASS GENRERAL --start----*/
+/*-----CLASSE GENRERAL --start--------------------*/
 
 /* START:  Pour les titres---*/
 
@@ -40,12 +35,14 @@
             text-decoration: underline;
             font-size: var(--size-title-slider);
         }
+
         .title-2 {
             text-decoration: underline;
             font-size: var(--size-title-2);
         }
 
-/*------CLASS GENRERAL-----END -------*/
+/*------CLASSE GENRERAL-----END -------------------*/
+
     body {
         max-width: 1920px;
         /* overflow: hidden!important;  */
@@ -101,7 +98,7 @@
             transition: transform 0.42s ease-in-out;
         }
 
-/*------menu open -------------------------------------*/
+/*------menu burger open -------------------------------------*/
   
         @media (max-width: 1200px) { 
             .navbar-toggler:not(.collapsed) ~ .offcanvas-end .offcanvas-body {
@@ -147,6 +144,7 @@
             transition: transform 0.35s ease-in-out;
             transform-origin: center;
         }   
+
 /* END : création line en dessous menu navigation---*/
     
         .navbar-nav .nav-link:hover,
@@ -199,14 +197,15 @@
             filter: opacity(0.5);
         }
 /* end : effet hover sur menu navigation--------------------------*/
-/* end : menu open ------------------------------------------------*/
+/* end : menu burger open ------------------------------------------------*/
 /*---menu-burger end--------------------------------------------------*/
 
 
 /*-----start main------------------------------------------------------*/
-main {
-    background-color: var(--color-bg-main);
-}
+
+        main {
+            background-color: var(--color-bg-main);
+        }
 /* start: background derriere header et slider */
 
         .bg-custom {
@@ -467,13 +466,14 @@ main {
             border-color: var(--color-header)!important;
         }
 /*>End effect hover btn -----------*/
+
         .card-header {
             background-color: rgba(0, 0, 0, 0.15);
-            min-height: 100px;
+            min-height: 5rem;
         }
         .fish-icon {
-            font-size: 24px; 
-            color: #B197FC; 
+            font-size: var(--size-icons); 
+            color: var(--color-icon); 
         }
         
         .list-group-item span {
@@ -491,12 +491,12 @@ main {
         }
 
         .wheather-icon {
-            font-size: 24px; 
+            font-size: var(--size-icons); 
             color: #FFD43B; 
         }
         .lightbulb-icon {
-            font-size: 24px; 
-            color:#B197FC;
+            font-size: var(--size-icons); 
+            color: var(--color-icon);
         }
 
 
