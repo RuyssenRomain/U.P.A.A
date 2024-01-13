@@ -494,6 +494,10 @@ main {
             font-size: 24px; 
             color: #FFD43B; 
         }
+        .lightbulb-icon {
+            font-size: 24px; 
+            color:#B197FC;
+        }
 
 
      /*penser a regrouper les couleur => mettre une ampoule en ico sur a savoir /retravailler les card-lin-info mettre bordure pour bien les differencier effectuer le redimensionnement des backgournd des card-header*/
