@@ -15,6 +15,7 @@
         /* section-1*/
         --color-bg-sect-1 : #6e8be2;
         --color-card-bg: rgb(234, 234, 227);
+        --color-card-list-text:  #0b0b0b;
         --color-icon:#B197FC; 
 
         /* size */
@@ -479,7 +480,8 @@
         }
         
         .color-item {
-            color: #0b0b0b;
+            color: var(--color-card-list-text);
+            font-weight: 500;
         }
 
         .fish-icon,
@@ -492,10 +494,17 @@
         .lightbulb-icon {
             color: var(--color-icon); 
         }
-    
+
+/*----  effect hover icon -----*/
+        .fa-fish-fins,
+        .fa-lightbulb {
+            filter: drop-shadow(0 1px 10px  #271010);
+        }
+        
+       
         .list-group-item span {
             display: flex;
-            color: #0b0b0b;
+            color: var(--color-card-list-text);
             font-weight: 800;
         }
 
@@ -514,7 +523,7 @@
        
 
         
-     /* comm git group icon css classes change bg color card-container and list-group item class color item change color list-item card penser a regrouper la couleurb */
+     /* comm git  */
 
 /* END : cards -----------------*/
 /*-----end main-------------------------------------------------------------*/
