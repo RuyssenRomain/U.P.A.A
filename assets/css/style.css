@@ -399,8 +399,12 @@
        }
 
        .water-intro {
-        color: #363636;/* provisoire*/
+        color: #363636; 
         font-size: calc(1rem + 0.4vw);
+       }
+
+       .water-intro p {
+         color: #24293E; 
        }
 
 /* start cards -----------------*/
