@@ -219,7 +219,7 @@
             background-color: #586654;
             clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
         }
-        
+
         @media screen and (min-width:500px) {
         .bg-custom {
             height: calc(75% + 20vw);
@@ -551,15 +551,7 @@
                 height: 10rem;
             }
         }
-        
 
-        @media screen and (min-width: 500px) {
-            .fish-svg {             
-                width: 18rem;
-                height: 18rem;
-            }
-        }
-      
         @media screen and (min-width: 768px) {
             .fish-svg {
                 top: 13rem;
@@ -567,6 +559,7 @@
                 height: 18rem;
             }
         }
+
         @media screen and (min-width: 850px) {
             .fish-svg {
                 top: 14rem;
@@ -582,6 +575,9 @@
             left: 0; 
             width: 100%;
         }
+/*--end -- section 1 => plans d eau et réglementation */ 
+
+  
 
 /*-----end main-------------------------------------------------------------*/
- /* comm git penser a placer le svg en bas de la section / add svg and position onn  the main */
+ /* comm git penser a changer les accents */
