@@ -215,11 +215,17 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 65%;
+            height: calc(61% + 20vw);
             background-color: #586654;
             clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
         }
-/* end: background derriere header et slider */
+        
+        @media screen and (min-width:500px) {
+        .bg-custom {
+            height: calc(75% + 20vw);
+        }
+        } 
+/* end: background derriere header et slider
 
 /* start: slider--------------------------------------------------------------- */
         .carousel {
@@ -521,10 +527,61 @@
         .wheather-icon {
             color: #efa00b; 
         }
-       
-
-        
-     /* comm git  */
-
+    
 /* END : cards -----------------*/
+        .fish-svg {
+            position: relative;
+            top: 11rem;
+            left: 49%;
+            transform: translate(-50%, -50%);
+            width: 17rem;
+            height: 13rem;
+            background: url(../../img/illustration/LOGO-fede-peche.svg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        @media screen and (max-width: 500px) {            
+            .fish-svg { 
+                position: relative;
+                top: 7rem;
+                left: 49%;            
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+        
+
+        @media screen and (min-width: 500px) {
+            .fish-svg {             
+                width: 18rem;
+                height: 18rem;
+            }
+        }
+      
+        @media screen and (min-width: 768px) {
+            .fish-svg {
+                top: 13rem;
+                width: 18rem;
+                height: 18rem;
+            }
+        }
+        @media screen and (min-width: 850px) {
+            .fish-svg {
+                top: 14rem;
+                width: 18rem;
+                height: 18rem;
+                left: 47%;
+            }
+        }
+
+        .custom-svg-bottom {
+            position: relative;
+            top: 9rem;
+            left: 0; 
+            width: 100%;
+        }
+
 /*-----end main-------------------------------------------------------------*/
+ /* comm git penser a placer le svg en bas de la section / add svg and position onn  the main */
