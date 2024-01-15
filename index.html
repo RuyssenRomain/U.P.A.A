@@ -1,27 +1,36 @@
-        <!DOCTYPE html>
-        <html lang="fr">
+<!DOCTYPE html>
+    <html lang="fr">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Pensé à ajouter les meta-données -->
-            <!-- bootstrap css -->
+<!-- Pensé à ajouter les meta-données -->
+<!-- bootstrap css -->
             <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-            <!-- css -->
+
+<!-- css -->
             <link rel="stylesheet" href="./assets/css/style.css">
             <link rel="stylesheet" href="./assets/css/reset.css">
+
+<!-- font-awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
             <!-- intégration logo-onglet navigateur  -->
             <link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
             <title>U.P.A.A</title>
         </head>
         <body>
-            <!-- START HEADER -->
+<!-- START HEADER -->
             <header id="top">
                 <nav class="navbar navbar-expand-xl shadow position-fixed top-0 start-0 end-0 z-3">
-                    <div class="container-fluid mx-md-3">
+                    <div class="container-fluid mx-md-3 mx-lg-0">
                         <a href="#top">
                             <img class="logo" src="./img/logo/logo-upa-modif.png" alt="logo de l'association représentant un poisson sortant de l'eau">
                         </a>
-                        <h1 class="navbar-brand ms-xl-4">U.P.A.A</h1>
+                        <h1 class="navbar-brand ms-xl-4">
+                            <a href="#Sommes-nous" class="custom-link">
+                                <abbr title="Union des pêcheurs et aménagement des milieux aquatiques">U.P.A.A</abbr>
+                            </a>
+                        </h1>
                         <button class="navbar-toggler burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -51,76 +60,218 @@
                                     <img src="./img/illustration/logo fede-WEb.webp" class="mx-auto" alt="dessin épuré d'un poisson de couleur blanche ">
                                 </a>               
                             </div>
-                          </div>
-                                             
+                          </div>                                            
                     </div>
                 </nav>
             </header>
-            <!-- HEADER END -->
+<!-- HEADER END -->
 
-            <!-- MAIN START -->
-            <main class="container-fluid p-0 m-0">
-                    <div class="bg-custom"></div>
-                    <div id="carouselExampleCaptions"  class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel" data-bs-interval="4000" >
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img src="./img/slider/big pike-768.webp" class="d-block w-100" alt="capture d'un gros brochet">
-                              <div class="carousel-caption d-flex justify-content-around align-items-center">
-                                  <div class="custom-slider1">
-                                        <h2 class="title-caption">Découvrez l'UPA :</h2>
-                                        <p class="mb-0">Au cœur de la pêche, au service<br> de la nature.</p>
-                                  </div>
-                                  <div class="container-btn" class="d-flex align-items-center">
-                                        <a class="btn custom-btn border border-3" href="#Sommes-nous" role="button">En savoir plus</a>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/slider/mael-peche-webp667.png" class="d-block w-100" alt="enfant souriant soulevant un brochet dans une épuisette">
-                                <div class="carousel-caption d-flex justify-content-around align-items-center">
-                                    <div class="custom-slider">
-                                        <h3 class="title-caption">Rempoissonnement:</h3>
-                                        <p class="mb-0">Renouvelons la vie de nos rivières.</p>
-                                    </div>
-                                    <div class="container-btn">
-                                        <a class="btn custom-btn border border-3" href="#Evenement" role="button">En savoir plus</a>
-                                    </div>
+<!-- MAIN START -->
+            <main class="container-fluid p-0 m-0 w-100 h-100">
+                <div class="bg-custom"></div>
+
+<!-- START SLIDER -->
+                <div id="carouselExampleCaptions"  class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel" data-bs-interval="4000" >
+                    <div class="carousel-inner">
+                        <figure class="carousel-item active">
+                            <img src="./img/slider/big pike-768.webp" class="d-block w-100" alt="capture d'un gros brochet">
+                            <figcaption class="carousel-caption d-flex justify-content-around align-items-center">
+                                <div class="custom-slider1">
+                                    <h2 class="title">Découvrez l'UPA</h2>
+                                    <p class="mb-0 d-none d-sm-block">Au cœur de la pêche, au service<br> de la nature.</p>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/slider/truite relaché-Web-768.webp" class="d-block w-100" alt="pêcheur relachant une truite dazns l'eau">
-                                <div class="carousel-caption d-flex justify-content-around align-items-center">
-                                    <div class="custom-slider">
-                                        <h3 class="title-caption">Samedis pêche: </h3>
-                                        <p class="mb-0">Initiation à la pêche chaque semaine un nouveau thème.</p>
-                                    </div>
-                                    <div class="container-btn">
-                                        <a class="btn custom-btn border border-3" href="#Evenement" role="button">En savoir plus</a>
-                                    </div>
+                                <div class="container-btn" class="d-flex align-items-center">
+                                    <a class="btn custom-btn border border-3 z-3" href="#Sommes-nous" role="button">En savoir plus</a>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/slider/groupe-personnes-nettoie-ordures-sortie-foret-au-printemps-webP.webp" class="d-block w-100" alt="groupe de personnness néttoyant les abords d'une rivière">
-                                <div class="carousel-caption d-flex justify-content-around align-items-center">
-                                    <div class="custom-slider">
-                                        <h3 class="title-caption">Propreté des rivières :</h3>
-                                        <p class="mb-0">Participez à nos campagnes de<br> nettoyage !</p>
-                                    </div>
-                                    <div class="container-btn">
-                                        <a class="btn custom-btn border border-3" href="#Evenement" role="button">En savoir plus</a>
-                                    </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="./img/slider/mael-peche-webp667.png" class="d-block w-100" alt="enfant souriant soulevant un brochet dans une épuisette">
+                            <figcaption class="carousel-caption d-flex justify-content-around align-items-center">
+                                <div class="custom-slider">
+                                    <h2 class="title">Rempoissonnement</h2>
+                                    <p class="mb-0 d-none d-sm-block">Renouvelons la vie de nos rivières.</p>
                                 </div>
+                                <div class="container-btn">
+                                    <a class="btn custom-btn border border-3" href="#Evenement" role="button">En savoir plus</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="img/slider/truite relaché-Web-768.webp" class="d-block w-100" alt="pêcheur relachant une truite dazns l'eau">
+                            <figcaption class="carousel-caption d-flex justify-content-around align-items-center">
+                                <div class="custom-slider">
+                                    <h2 class="title">Samedis pêche</h2>
+                                    <p class="mb-0 d-none d-sm-block">Initiation à la pêche chaque semaine un nouveau thème.</p>
+                                </div>
+                                <div class="container-btn">
+                                    <a class="btn custom-btn border border-3" href="#Evenement" role="button">En savoir plus</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="img/slider/groupe-personnes-nettoie-ordures-sortie-foret-au-printemps-webP.webp" class="d-block w-100" alt="groupe de personnness néttoyant les abords d'une rivière">
+                            <figcaption class="carousel-caption d-flex justify-content-around align-items-center">
+                                <div class="custom-slider">
+                                    <h2 class="title">Nettoyage des rivières</h2>
+                                    <p class="mb-0 d-none d-sm-block">Participez à nos campagnes de<br> nettoyage !</p>
+                                </div>
+                                <div class="container-btn">
+                                    <a class="btn custom-btn border border-3" href="#Evenement" role="button">En savoir plus</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon size-arrow" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon size-arrow" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+
+<!-- END SLIDER -->
+
+                <div class="custom-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#6e8be2" fill-opacity="1" d="M0,64L48,90.7C96,117,192,171,288,165.3C384,160,480,96,576,74.7C672,53,768,75,864,117.3C960,160,1056,224,1152,256C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                        </svg>
+                </div>
+
+<!-- START SECTION 1 plans d"eau et réglementation -->
+                <section id="eau" class="water-container container-fluid w-100 ">
+                    <div class="water-intro pt-1 mb-5">
+                        <h2 class="title-2 text-center pb-3">Nos plans d’eau & réglementation</h2>
+                        <p class="text-center pt-2 pt-md-3">Votre aventure commence ici : <br>120 km de rivages et 22 hectares d'étangs vous attendent pour une expérience de pêche inoubliable.</p>
+                    </div>
+<!-- START: cards --> 
+                    <div class="water-cards d-flex flex-column flex-md-row align-items-start mt-md-5">
+                        <figure class="card mx-auto me-md-4">
+                            <div class="container-img">
+                                <img src="./img/plan d'eau/riviere-somme.webp" class="card-img-top" alt="rivière sauvage traversant une foret luxuriante">
                             </div>
-                          </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon size-arrow" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                          <span class="carousel-control-next-icon size-arrow" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                  </div>    
+                            <figcaption class="card-body">
+                                <h3 class="card-title text-center ">La Somme</h3>
+                                <h4 class="card-subtitle mb-2 text-body-secondary text-center">Rivière de catégorie 2</h4>             
+                                <a class="btn btn-primary effect-hover custom-card-link my-2" data-bs-toggle="collapse" href="#collapseSomme" role="button" aria-expanded="false" aria-controls="collapseSomme">
+                                    Découvrir
+                                </a>                      
+                                <div class="collapse my-3" id="collapseSomme">
+                                    <p class="card-text text-center">La Somme sur la zone d'Amiens se distingue par sa remarquable biodiversité, abritant une grande variété d'espèces aquatiques et une flore riche. Cet écosystème unique en fait une destination privilégiée pour les pêcheurs à la recherche d'une expérience riche et variée en plein cœur de la nature.</p>
+                                    <div class="card-header d-flex flex-column justify-content-center text-center my-4">
+                                        <h5 class="card-text mb-2 mb-md-4">Espèces présentes</h5>
+                                        <i class="fa-solid fa-fish-fins fa-rotate-by fish-icon"></i>
+                                    </div>
+                                    <ul class="list-group list-group-fluh">
+                                        <li class="list-group-item color-item">Brochet</li>
+                                        <li class="list-group-item color-item">Sandre</li>
+                                        <li class="list-group-item color-item">Perche</li>
+                                        <li class="list-group-item color-item">Carpe</li>
+                                        <li class="list-group-item color-item mb-2">Gardon</li>
+                                    </ul>
+                                    <div class="card-body text-end">
+                                        <a href="https://fr.wikipedia.org/wiki/Somme_(fleuve)" target="_blank" class="card-link-info">Plus d'info</a>
+                                    </div>                                  
+                                    <a class="btn btn-primary custom-card-link" data-bs-toggle="collapse" href="#collapseSommeRule" role="button" aria-expanded="false" aria-controls="collapseSommeRule">
+                                        Réglementation
+                                    </a>
+                                    <div class="collapse my-3" id="collapseSommeRule">
+                                        <p class="card-text text-center">
+                                            Explorez les diverses réglementations de notre association pour une pêche responsable et respectueuse dans nos plans d'eau variés.</p>       
+                                        <div class="card-header d-flex flex-column justify-content-center  text-center p-0 mb-4 mb-md-5">
+                                            <h5 class="card-text">A savoir</h5>
+                                            <i class="fa-solid fa-lightbulb lightbulb-icon"></i>
+                                        </div>    
+                                        <p class="list-group-item"><span>Canne autorisées:</span> 4</p>
+                                        <p class="list-group-item"><span> Pêche au leurre:</span> Oui</p>
+                                        <p class="list-group-item"><span>Pêche aux blancs: </span>Autorisée toute l’année</p>
+                                        <p class="list-group-item"><span>Période d’ouverture: </span>01 Janvier au 31 Décembre</p>
+                                        <div>
+                                            <p class="list-group-item"><span class="me-md-4">horaire légale: </span>- 30 min avant le lever.<br> - 30 min après avant le coucher.</p>
+                                            <a href="https://meteofrance.com/previsions-meteo-france/amiens/80000 card-link-weather" target="_blank" class="card-link">
+                                                <i class="fa-solid fa-cloud-sun wheather-icon me-2"></i>
+                                                Découvrer les horaires d'aujourd'hui
+                                            </a>
+                                        </div>
+                                        <div class="card-body text-end" >
+                                            <a href="https://www.generationpeche.fr/176-regles-a-connaitre.htm" target="_blank" class="card-link-info">Plus d'info</a>
+                                        </div>                       
+                                    </div>
+                                </div>                         
+                            </figcaption>
+                        </figure>
+                        <figure class="card mx-auto mt-5 mt-md-0">
+                            <div class="container-img">
+                                <img src="./img/plan d'eau/etangs st pierre desktop.webp" class="card-img-top" alt="plan d'eau présent dans un parc arboré">
+                            </div>
+                            <figcaption class="card-body">
+                                <h3 class="card-title text-center">Etang Saint-Pierre</h3>
+                                <h4 class="card-subtitle mb-2 text-body-secondary text-center">Plan d'eau de 22 hectares</h4>          
+                                <a class="btn btn-primary effect-hover custom-card-link my-2" data-bs-toggle="collapse" href="#collapseEtang" role="button" aria-expanded="false" aria-controls="collapseEtang">
+                                  Découvrir
+                                </a>                
+                                <div class="collapse my-3" id="collapseEtang">
+                                    <p class="card-text text-center">Vivez une expérience de pêche unique au Parc Saint-Pierre à Amiens, un havre de nature en plein centre-ville. Ce parc de 22 hectares, conçu par Jacqueline Osty, mêle eau et verdure, offrant un cadre idéal pour la pêche en milieu urbain. Profitez de l'étang riche en poissons et des canaux paisibles, tout en étant à deux pas de sites emblématiques comme la Cathédrale et la Tour Perret. Parfait pour une journée en famille, le parc propose aussi des activités ludiques, un labyrinthe végétal et des espaces de jeux.</p>
+                                    <div class="card-header d-flex flex-column justify-content-center text-center my-4">
+                                        <h5 class="card-text mb-2 mb-md-4">Espèces présentes</h5>
+                                        <i class="fa-solid fa-fish-fins fa-rotate-by fish-icon"></i>
+                                    </div>
+                                    <ul class="list-group list-group-fluh">
+                                        <li class="list-group-item color-item">Silure</li>
+                                        <li class="list-group-item color-item">Carpe</li>
+                                        <li class="list-group-item color-item">Perche</li>
+                                        <li class="list-group-item color-item">Esturgeon</li>
+                                        <li class="list-group-item color-item mb-2">Truite</li>
+                                    </ul>
+                                    <div class="card-body text-end">
+                                        <a href="https://peche80.com/index.php?mod=11&id=59" target="_blank" class="card-link-info">Plus d'info</a>
+                                    </div>                               
+                                    <a class="btn btn-primary custom-card-link"data-bs-toggle="collapse" href="#collapseEtangRule"role="button"  aria-expanded="false"aria-controls="collapseEtangRule">
+                                        Réglementation
+                                    </a>                            
+                                    <div class="collapse my-3" id="collapseEtangRule">
+                                        <p class="card-text text-center">
+                                            Explorez les diverses réglementations de notre association pour une pêche responsable et respectueuse dans nos plans d'eau variés.</p>
+                                        <div class="card-header d-flex flex-column justify-content-center  text-center p-0 mb-4 mb-md-5">
+                                                <h5 class="card-text">A savoir</h5>
+                                                <i class="fa-solid fa-lightbulb lightbulb-icon"></i>
+                                        </div>    
+                                        <p class="list-group-item"><span>Canne autorisées:</span> 4</p>
+                                        <p class="list-group-item"><span> Pêche au leurre:</span> Oui</p>
+                                        <p class="list-group-item"><span>Pêche aux blancs: </span>Autorisée toute l’année</p>
+                                        <p class="list-group-item"><span>Période d’ouverture: </span>01 Janvier au 31 Décembre</p>
+                                        <div>
+                                            <p class="list-group-item"><span class="me-md-4">horaire légale: </span>- 30 min avant le lever.<br> - 30 min après avant le coucher.</p>
+                                            <a href="https://meteofrance.com/previsions-meteo-france/amiens/80000 card-link-weather" target="_blank" class="card-link">
+                                                <i class="fa-solid fa-cloud-sun wheather-icon me-2"></i>
+                                                Découvrer les horaires d'aujourd'hui
+                                            </a>
+                                        </div>
+                                        <div class="card-body text-end" >
+                                            <a href="https://www.generationpeche.fr/176-regles-a-connaitre.htm" target="_blank" class="card-link-info">Plus d'info</a>
+                                        </div>                       
+                                    </div> 
+                                </div>                         
+                            </figcaption>
+                        </figure>
+                    </div>
+<!-- END: Cards -->
+                    <div class="fish-svg"></div>
+                </section> 
+<!-- start vague for the bottom background -->
+                  <div class="custom-svg-bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#6e8be2" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,229.3C384,267,480,277,576,266.7C672,256,768,224,864,186.7C960,149,1056,107,1152,90.7C1248,75,1344,85,1392,90.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                      </svg>
+                </div>
+
+<!-- END SECTION 1 plans d"eau et réglementation -->
+
+
+<!-- ---END : section TARIF --- -->
+            
             </main>
             <!-- MAIN END -->
             <footer></footer>
@@ -128,4 +279,4 @@
             <!-- bootstrap bundle with popper -->
             <script src="./assets/js/bootstrap.bundle.min.js"></script>
         </body>
-        </html>
+</html>
