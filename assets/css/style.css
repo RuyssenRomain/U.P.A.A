@@ -26,6 +26,7 @@
         --size-P-slider:clamp(1rem, 2.2vw, 1.15rem);
         --size-title-2: calc(1.25rem + 1vw);
         --size-icons: 24px;  
+        --size-P-main: calc(1rem + 0.4vw);  
     }
 /* -------- END VARIABLE -----------------------*/
 
@@ -40,6 +41,10 @@
 
         .title-2 {
             text-decoration: underline;
+            font-size: var(--size-title-2);
+        }
+
+        .title-3 {
             font-size: var(--size-title-2);
         }
 
@@ -207,6 +212,9 @@
 
         main {
             background-color: var(--color-bg-main);
+        }
+        main p {
+            font-size: var(--size-P-main);
         }
 /* start: background derriere header et slider */
 
@@ -411,9 +419,16 @@
 
        .water-intro p {
          color: #24293E; 
+         font-weight: 500;
        }
 
 /* start cards -----------------*/
+
+        @media screen and (min-width: 768px) {
+            .water-cards {
+                margin-top: 5rem!important;   
+            }
+        }
 
         .card {
             width: 18rem!important;
@@ -578,24 +593,68 @@
 /*--end -- section 1 => plans d eau et réglementation */ 
 
 /*--start -- section 2 => tarif--------*/ 
+
         #Tarifs {
             position: relative;
-            top: 8.5rem;
+            top: 3rem;
             left: 0;
-        }
-        .line {
-            display: block;
-            height: 2px!important;
-            width: 25%;
-            background-color: #6e8be2;
-        }
-        .fishing-permit {
             width: 100%;
             height: 100%;
-            flex-wrap: wrap;
         }
 
-/*--end -- section 2 => tarif--------*/   
+        .custom-tarif-img {
+            position: absolute;
+            top: 60%;
+            left: 0;
+            width: 100%;
+            height: 90%;
+        }
+        
+        .custom-tarif-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .permit-intro {
+            position: relative;
+            top: 5rem;
+        }
+
+        .permit-intro h2 {
+            border-bottom: 4px solid blueviolet;
+            line-height: calc(4rem + 0.3vw);
+        }
+
+        .permit-intro p {
+            font-size: var(--size-P-main);
+        }
+
+        .permit-intro a {
+            font-weight: 500;
+            color: blueviolet;
+            transition: all 0.10s ease-in-out;
+            text-shadow: 0 0px 6px var(--color-bg-main);
+        }
+
+        .permit-intro a:hover {
+            font-weight: 750;
+            color: #C14E2A;
+        }
+
+        .car-tarif {
+            position: relative;
+            top:0;
+            width: 100%;
+        }
+
+/* start -----format mobile-----*/
+   
+/*--end -- section 2 => tarif--------*/  
+        .space {
+            width: 100%;
+            height: 400px;
+        } 
 
 /*-----end main-------------------------------------------------------------*/
  /* comm git penser a changer les accents */
