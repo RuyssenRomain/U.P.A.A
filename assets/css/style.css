@@ -26,6 +26,7 @@
         --size-P-slider:clamp(1rem, 2.2vw, 1.15rem);
         --size-title-2: calc(1.25rem + 1vw);
         --size-icons: 24px;  
+        --size-P-main: calc(1rem + 0.4vw);  
     }
 /* -------- END VARIABLE -----------------------*/
 
@@ -40,6 +41,10 @@
 
         .title-2 {
             text-decoration: underline;
+            font-size: var(--size-title-2);
+        }
+
+        .title-3 {
             font-size: var(--size-title-2);
         }
 
@@ -208,6 +213,7 @@
         main {
             background-color: var(--color-bg-main);
         }
+
 /* start: background derriere header et slider */
 
         .bg-custom {
@@ -386,9 +392,9 @@
 
 /*start section 1 => plans d eau et réglementation */
         .custom-svg {        
-        position: relative;
-        width: 100%;
-        top: 10rem;
+            position: relative;
+            width: 100%;
+            top: 10rem;
         }
 
         @media screen and (max-width: 920px) {
@@ -411,40 +417,49 @@
 
        .water-intro p {
          color: #24293E; 
+         font-weight: 500;
        }
 
 /* start cards -----------------*/
 
-        .card {
+        @media screen and (min-width: 768px) {
+            .water-cards {
+                margin-top: 5rem!important;   
+            }
+        }
+
+        .card-container {
             width: 18rem!important;
             box-shadow:  2px 1px 9px 1px rgba(0, 0, 0, 0.57);
             width:90%!important;
         }
-
+/*rename   .card-body-water,
+        .list-group-water,
+        .list-group-item-water  --- */
         
         @media screen and (min-width: 781px) {
-            .card {
+            .card-container {
                 width: 45%!important;
             }
         }
 
         @media screen and (min-width: 1200px) {
-            .card {
+            .card-container {
                 width: 30%!important;
             }
         }
 
-        .card-body,
-        .list-group
-        .list-group-item {
+        .card-body-water,
+        .list-group-water,
+        .list-group-item-water {
             background-color: var(--color-card-bg);
         }
 
-        .card-title {
+        .card-title-water {
             font-size: calc(1.275rem + .3vw);
         }
 
-        .card-subtitle {
+        .card-subtitle-water {
             font-size: calc(1rem + .3vw);
         }
 
@@ -454,11 +469,11 @@
             overflow: hidden;
         }
 
-        .card img {
+        .card-container img {
             transition: transform 0.5s ease-in-out;
         }
 
-        .card img:hover {
+        .card-container img:hover {
             transform: scale(1.25);
         }
 
@@ -481,7 +496,7 @@
         }
 /*>End effect hover btn -----------*/
 
-        .card-header {
+        .card-header-svg {
             background-color: #2d6e80de;
             min-height: 5rem;
         }
@@ -577,7 +592,74 @@
         }
 /*--end -- section 1 => plans d eau et réglementation */ 
 
-  
+/*--start -- section 2 => tarif--------*/ 
+
+        #Tarifs {
+            position: relative;
+            top: 3rem;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #Tarifs p {
+            font-size: var(--size-P-main);
+        }
+
+        .custom-tarif-img {
+            position: absolute;
+            top: 60%;
+            left: 0;
+            width: 100%;
+            height: 90%;
+        }
+        
+        .custom-tarif-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .permit-intro {
+            position: relative;
+            top: 5rem;
+        }
+
+        .permit-intro h2 {
+            border-bottom: 4px solid blueviolet;
+            line-height: calc(4rem + 0.3vw);
+        }
+
+        .permit-intro p {
+            font-size: var(--size-P-main);
+        }
+
+        .permit-intro a {
+            font-weight: 500;
+            color: blueviolet;
+            transition: all 0.10s ease-in-out;
+            text-shadow: 0 0px 6px var(--color-bg-main);
+        }
+
+        .permit-intro a:hover {
+            font-weight: 750;
+            color: #C14E2A;
+        }
+
+        .card-tarif {
+            position: relative;
+            top:0;
+            width: 100%;
+        }
+
+
+/* start -----format mobile-----*/
+   
+/*--end -- section 2 => tarif--------*/  
+        .space {
+            width: 100%;
+            height: 400px;
+        } 
 
 /*-----end main-------------------------------------------------------------*/
  /* comm git penser a changer les accents */
