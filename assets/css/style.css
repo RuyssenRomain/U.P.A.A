@@ -12,6 +12,7 @@
         /* main */
         --color-bg-main: #e7e7e7e6;
         --color-txt-slider:#F2F2F2;
+        --color-a-permit:blueviolet;
         /* section-1*/
         --color-bg-sect-1 : #6e8be2;
         --color-card-bg: rgb(234, 234, 227);
@@ -26,7 +27,9 @@
         --size-P-slider:clamp(1rem, 2.2vw, 1.15rem);
         --size-title-2: calc(1.25rem + 1vw);
         --size-icons: 24px;  
-        --size-P-main: calc(1rem + 0.4vw);  
+        --size-P-main: calc(1rem + 0.4vw); 
+        /*weight*/
+        --weight-medium: 500; 
     }
 /* -------- END VARIABLE -----------------------*/
 
@@ -417,7 +420,7 @@
 
        .water-intro p {
          color: #24293E; 
-         font-weight: 500;
+         font-weight: var(--weight-medium);
        }
 
 /* start cards -----------------*/
@@ -500,7 +503,7 @@
         
         .color-item {
             color: var(--color-card-list-text);
-            font-weight: 500;
+            font-weight: var(--weight-medium);
         }
 
         .fish-icon,
@@ -529,7 +532,7 @@
 
         .card-link-info {
             font-size: calc(1.1rem + 0.2vw);
-            font-weight: 500;
+            font-weight: var(--weight-medium);
         }
 
         .card-link-weather {
@@ -623,34 +626,38 @@
         }
 
         .permit-intro h2 {
-            border-bottom: 4px solid blueviolet;
+            border-bottom: 4px solid var(--color-a-permit);
             line-height: calc(4rem + 0.3vw);
         }
 
-        .permit-intro p {
+        .permit-intro p,
+        .permit-intro div p {
             font-size: var(--size-P-main);
         }
+        .permit-intro div p {
+            font-weight: var(--weight-medium);
+        }
 
-        .permit-intro a {
-            font-weight: 500;
-            color: blueviolet;
+        .permit-intro  div a {
+            font-weight: var(--weight-medium);
+            color: var(--color-a-permit);
             transition: all 0.10s ease-in-out;
             text-shadow: 0 0px 6px var(--color-bg-main);
         }
 
-        .permit-intro a:hover {
+        .permit-intro  div a:hover {
             font-weight: 750;
             color: #C14E2A;
         }
 
+/* start -----format mobile-----*/
         .card-tarif {
             position: relative;
-            top:0;
+            top: 5rem!important;
             width: 100%;
         }
 
-
-/* start -----format mobile-----*/
+/* end -----format mobile-----*/
    
 /*--end -- section 2 => tarif--------*/  
         .space {
