@@ -611,7 +611,6 @@
             top: 60%;
             left: 0;
             width: 100%;
-            height: 90%;
         }
         
         .custom-tarif-img img {
@@ -653,8 +652,30 @@
 /* start -----format mobile-----*/
         .card-tarif {
             position: relative;
-            top: 5rem!important;
+            top: 6rem!important;
             width: 100%;
+            background-color: var(--color-bg-main);  
+        }
+
+        .card-tarif-img {
+            position: relative;
+            width: 100%;
+            background-color: var(--color-bg-main);    
+            border: none;   
+        }
+
+        .card-tarif-img img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-position: center;
+            /* clip-path: polygon(100% 0, 100% 73%, 0 100%, 0 27%); */
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        .card-body-tarif {
+           background-color:  var(--color-bg-main);
         }
 
 /* end -----format mobile-----*/
