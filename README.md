@@ -1,4 +1,4 @@
-# Union of Amateur Aquatic Fishers (U.P.A.A.)
+# Union of fishermen and management of aquatic environments(U.P.A.A.)
 
 ## Description
 - This website is designed for the U.P.A.A. Fishing Association to showcase its activities, events, and environmental initiatives.
