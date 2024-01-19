@@ -737,7 +737,7 @@
         }
         /*--End --- effect hover btn -----tarif */
     /* end -----format mobile et tablette -----*/
-    
+
 /* start --format desktop*/
         .fishing-permit-container {
             top: 13rem;
@@ -905,6 +905,9 @@
                
                 font-size: calc(1.65rem + 0.3vw);
             }   
+        }
+        .text-event {
+            font-size: var(--size-P-main);
         }
 
         
