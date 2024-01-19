@@ -71,7 +71,7 @@
 
 /* ----------------START HEADER ------------- */
             .logo {
-                width: clamp(4rem, 10vw, 8rem);
+                width: clamp(5rem, 10vw, 9rem);
             }
 
         h1{
@@ -591,7 +591,7 @@
         }
 /*--end -- section 1 => plans d eau et réglementation */ 
 
-/*--start -- section 2 => tarif--------*/ 
+/*--start -- section 2 => event--------*/ 
 
         #Tarifs {
             position: relative;
@@ -905,10 +905,41 @@
                
                 font-size: calc(1.65rem + 0.3vw);
             }   
-        }
-        .text-event {
-            font-size: var(--size-P-main);
-        }
+
+            }
+            .text-event {
+                font-size: var(--size-P-main);
+            }
+
+            .btn-event {
+                position: relative;
+                /* background-color: rgb(118, 116, 116); */
+                background-color: rgba(88, 102, 84, 1);
+                padding: 0.45rem;
+                text-decoration: none;
+                color: var(--color-bg-main);
+                border: 1px solid gray;
+                border-radius: 10px;
+                box-shadow: 0px -2px 1.3px 0px rgba(242, 242, 242, 0.48) inset, 5px 5px 8px rgba(0, 0, 0, 0.58);
+                transition: all 0.2s ease-in-out;
+                z-index: 1;       
+            }
+    
+            .btn-event:hover {         
+               color: var(--color-txt-slider);        
+            }
+    
+            .btn-event:focus,
+            .btn-event:active,
+            .btn-event:checked,
+            .btn-event:checked::after,
+            .btn-event:active::after {
+                color: var(--color-txt-slider);
+                filter: drop-shadow(0);
+                box-shadow:0px 1.5px 5px 0px rgba(0, 0, 0, 0.58) inset, 0px 3px 4px rgba(0, 0, 0, 0.58); 
+                transform: translateY(2px);
+            }
+            
 
         
 /*--end -- section 3 => evenement --------*/ 
