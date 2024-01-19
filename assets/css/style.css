@@ -70,13 +70,36 @@
         }
 
 /* ----------------START HEADER ------------- */
-            .logo {
-                width: clamp(4rem, 10vw, 8rem);
-            }
+        .logo {
+            width: clamp(5rem, 10vw, 9rem);
+        }
 
+        .container-header {
+            margin-left: 0rem!important;
+            margin-right: 0rem!important;
+        }
+
+        @media (min-width: 500px) and (max-width: 1199px) {
+            .container-header {
+            margin-left: 1rem!important;
+            margin-right: 1rem!important;
+            }   
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .container-header {
+            margin-left: 3rem!important;
+            margin-right: 3rem!important;
+            }   
+        }
+        @media (min-width: 1200px){
+            .container-header {
+            margin-left: 1rem!important;
+            margin-right: 1rem!important;
+            }   
+        }
+       
         h1{
             font-size: var(--size-h1)!important;
-            margin-right: 0!important;
             margin-bottom: 0!important;
         }
 
@@ -238,7 +261,7 @@
 
 /* start: slider--------------------------------------------------------------- */
         .carousel {
-            top: clamp(6.5rem, 16vw, 9.6rem);
+            top: clamp(6.5rem, 12.5vw, 10.65rem);
             left: 0;
             width:48%;
             height: 100%;
@@ -250,42 +273,49 @@
                
             }
         }
+
         @media screen and (max-width:1000px) {
             .carousel {
                 width: 54%;
                
             }
         }
+        
         @media screen and (max-width:970px) {
             .carousel {
                 width: 57%;
                 
             }
         }
+
         @media screen and (max-width:963px) {
             .carousel {
                 width: 58%;
                
             }
         }
+
         @media screen and (max-width:900px) {
             .carousel {
                 width:64%;
                
             }
         }
+
         @media screen and (max-width:862px) {
             .carousel {
                 width:68%;
                
             }
         }
+
         @media screen and (max-width:756px) {
             .carousel {
                 width:76%;
                
             }
         }
+
         @media screen and (max-width:672px) {
             .carousel {
                 width: 90%;
@@ -591,7 +621,7 @@
         }
 /*--end -- section 1 => plans d eau et réglementation */ 
 
-/*--start -- section 2 => tarif--------*/ 
+/*--start -- section 2 => event--------*/ 
 
         #Tarifs {
             position: relative;
@@ -737,6 +767,7 @@
         }
         /*--End --- effect hover btn -----tarif */
     /* end -----format mobile et tablette -----*/
+
 /* start --format desktop*/
         .fishing-permit-container {
             top: 13rem;
@@ -803,11 +834,149 @@
         }
 
         /*--End----hover card permit---*/
-    /* start --format desktop*/  
-/*--end -- section 2 => tarif--------*/  
+    /* -end --format desktop*/  
+/*--end -- section 2 => tarif--------*/ 
+
+/*--start -- section 3 => evenement --------*/ 
+        #Evenement {
+            position: relative;
+            top: calc(13rem + 0.3vw);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background-color: #C14E2A; a rectifier */
+        }
+
+        @media screen and (min-width: 991px) {
+            #Evenement {
+                top: calc(30rem + 0.3vw);
+            }
+        }
+
+        #Evenement > h2 {
+            border-bottom: 4px solid var(--color-a-permit);
+            line-height: calc(3rem + 0.3vw);
+        }
+               
+        .container-event {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 992px) {
+            .container-event {
+                width: 70%;
+            }
+        }
+
+        .box-rempoissonement {
+            background: url("../../img/evenement/truite-Web.webp")no-repeat;     
+        }
+        
+        .box-peche {
+            background: url("../../img/evenement/this-is-our-first-fish-season-Web.webp")no-repeat;
+            background-position: center top;  
+        }
+
+        .box-nettoyage {
+            background: url("../../img/nettoyage/groupe-personnes-nettoie-ordures-sortie-foret-au-printemps-webP.webp")no-repeat;  
+        }
+
+        .box-rempoissonement,
+        .box-peche,
+        .box-nettoyage {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid black;
+            background-position: center;
+            background-size: cover;   
+            height: calc(5rem + 8vw);
+            width: 100%;  
+        }
+
+        .box-rempoissonement::before,
+        .box-peche::before,
+        .box-nettoyage::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            z-index: 1;
+          }
+
+        .box-date {
+            z-index: 2;
+            background-color: #d8a355;
+            border-right:2px solid #0b0b0b;
+            width: calc(5rem + 8vw);
+        }
+
+        .box-date p {
+            font-size:calc(1.45rem + 0.3vw);
+        }
+
+        .box-title {
+            text-align: center;
+            z-index: 2;
+            color: var(--color-txt-slider); 
+            width: 100%;
+        }
+
+        .box-title h3 {
+            font-size: calc(18px + 0.3vw);
+            text-shadow: 2px 2px 2.5px rgba(0, 0, 0, 1);
+        }  
+
+        @media screen and (min-width: 472px) {
+            .box-title h3 {
+               
+                font-size: calc(1.65rem + 0.3vw);
+            }   
+
+            }
+            .text-event {
+                font-size: var(--size-P-main);
+            }
+
+            .btn-event {
+                position: relative;
+                /* background-color: rgb(118, 116, 116); */
+                background-color: rgba(88, 102, 84, 1);
+                padding: 0.8rem;
+                text-decoration: none;
+                color: var(--color-bg-main);
+                border: 1px solid gray;
+                border-radius: 15px;
+                box-shadow: 0px -2px 1.3px 0px rgba(242, 242, 242, 0.48) inset, 5px 5px 8px rgba(0, 0, 0, 0.58);
+                transition: all 0.2s ease-in-out;
+                z-index: 1;       
+            }
+   /* start ---btn-event effect hover and click*/ 
+            .btn-event:hover {         
+               color: var(--color-txt-slider);        
+            }
+    
+            .btn-event:focus,
+            .btn-event:active,
+            .btn-event:checked,
+            .btn-event:checked::after,
+            .btn-event:active::after {
+                color: var(--color-txt-slider);
+                filter: drop-shadow(0);
+                box-shadow:0px 1.5px 5px 0px rgba(0, 0, 0, 0.58) inset, 0px 3px 4px rgba(0, 0, 0, 0.58); 
+                transform: translateY(2px);
+            }
+            
+
+    /* End ---btn-event effect hover and click*/ 
+        
+/*--end -- section 3 => evenement --------*/ 
         .space {
             width: 100%;
-            height: 400px;
+            height: 800px; 
         } 
 
 /*-----end main-------------------------------------------------------------*/
