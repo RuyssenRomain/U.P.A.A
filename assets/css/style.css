@@ -974,6 +974,23 @@
     /* End ---btn-event effect hover and click*/ 
         
 /*--end -- section 3 => evenement --------*/ 
+
+/*--start -- section 4 => qui sommes-nous  --------*/ 
+        #Sommes-nous {
+            position: relative;
+            top: calc(16rem + 0.3vw);
+            left: 0;
+        }
+
+        @media screen and (min-width: 990px) {
+            #Sommes-nous {
+                top: calc(34rem + 0.3vw);
+                left: 0;
+            }           
+        }
+
+        
+/*--end -- section 4 => qui sommes-nous  --------*/ 
         .space {
             width: 100%;
             height: 800px; 
