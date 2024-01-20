@@ -238,6 +238,8 @@
 
         main {
             background-color: var(--color-bg-main);
+            width: 100%!important;
+            height: 100%!important;
         }
 
 /* start: background derriere header et slider */
@@ -806,7 +808,7 @@
             transform: perspective(600px) rotateY(180deg);
             background-color: #24293E;
             padding: 15px;
-            color: #F2F2F2;
+            color: var(--color-txt-slider);
         }
 
         .back ul li {
@@ -980,6 +982,7 @@
             position: relative;
             top: calc(16rem + 0.3vw);
             left: 0;
+            background-color: var(--color-bg-main);
         }
 
         @media screen and (min-width: 990px) {
@@ -990,9 +993,12 @@
                 height: 100%;
             }           
         }
+
         .container-Sommes-nous {
             width: 100%;
+            height: 100%;
         }
+
         .container-Sommes-nous h2 {
             border-bottom: 4px solid rgb(58, 113, 58);
             line-height: calc(3rem + 0.3vw);
@@ -1000,7 +1006,7 @@
 
         .content-text {
             position: relative;
-            top: 4rem;
+            margin-top: 4rem;
             max-width: 90vw; 
             border-radius: 10px;
             background:rgba(35, 87, 30, 0.655);
@@ -1009,7 +1015,6 @@
 
         @media  screen and (min-width: 500px) {
             .content-text {
-
                 max-width: 500px!important;
             }           
         }
@@ -1031,6 +1036,7 @@
             border-radius: 50%;  
             object-fit: cover;    
         }
+
         .content-text p {
             padding: 10px;
             font-size: var(--size-P-main);
@@ -1041,7 +1047,6 @@
             font-style: italic;
             border-left: 5px solid var(--color-bg-main);
             padding: 1rem;
-            z-index: 1;
         }
 
         blockquote:before,
@@ -1062,13 +1067,66 @@
             bottom: -3rem; 
             right: 8px; 
         }
+/*deuxieme partie de qui sommes-nous avec les statistiques de l'association */
+
+        .statistics-uppa {
+            width: 90vw;
+            padding: 0.5rem;
+            background-image: linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
+            border-radius: 10PX;
+        }
+    
+
+        .statistics-uppa p {
+            margin: 0;
+            padding: 0;
+            font-size: var(--size-P-main);
+        }
+
+        @media screen and (min-width: 400px) {
+            .statistics-uppa  {
+                width: 79vw;
+            }       
+        }
+        @media screen and (min-width: 600px) {
+            .statistics-uppa  {
+                width: 67vw;
+            }       
+        }
+        @media screen and (min-width: 900px) {
+            .statistics-uppa  {
+                width: 51vw;
+            }       
+        }
+
+        .container-about-card {
+            width: 100%; 
+            background-color: #24293E;
+            height: 100%;
+        }
+
+        .card-adherent,
+        .card-benevole,
+        .card-rdv {
+            position: relative;
+            width: 33.333%;
+            height: 100px;
+            background-color: #543525;
+
+        }
+
+        .img-about {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            border-radius: 50%;
+            background-color: green;
+            transform: translate(-50%, -50%);        
+            width: 30px;
+            height: 30px;
+        }
 
 
 /*--end -- section 4 => qui sommes-nous  --------*/ 
-        .space {
-            width: 100%;
-            height: 800px; 
-        } 
-
 /*-----end main-------------------------------------------------------------*/
  /* comm git penser a changer les accents */
