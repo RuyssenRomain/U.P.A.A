@@ -993,24 +993,36 @@
         .container-Sommes-nous {
             width: 100%;
         }
+        .container-Sommes-nous h2 {
+            border-bottom: 4px solid rgb(58, 113, 58);
+            line-height: calc(3rem + 0.3vw);
+        }
 
         .content-text {
             position: relative;
-            background-color: #B197FC;
             top: 4rem;
-            max-width: 90vw;          
+            max-width: 90vw; 
+            border-radius: 10px;
+            background:rgba(35, 87, 30, 0.655);
+            box-shadow: 1px 2px 15px 3px rgba(0, 0, 0, 0.58), 0px -1px 2px 2px #ffffff inset;      
+        }
+
+        @media  screen and (min-width: 500px) {
+            .content-text {
+
+                max-width: 500px!important;
+            }           
         }
 
         @media  screen and (min-width: 768px) {
             .content-text {
                 max-width: 600px!important;
-            }
-            
+            }           
         }
+       
 
         .content-text img {
             position: absolute;
-            background-color: #B197FC;
             width: 100%; 
             width: 100px;
             top: -3rem;
@@ -1020,6 +1032,7 @@
             object-fit: cover;    
         }
         .content-text p {
+            padding: 10px;
             font-size: var(--size-P-main);
         }
 
@@ -1028,6 +1041,7 @@
             font-style: italic;
             border-left: 5px solid var(--color-bg-main);
             padding: 1rem;
+            z-index: 1;
         }
 
         blockquote:before,
@@ -1048,6 +1062,7 @@
             bottom: -3rem; 
             right: 8px; 
         }
+
 
 /*--end -- section 4 => qui sommes-nous  --------*/ 
         .space {
