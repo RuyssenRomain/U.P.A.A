@@ -261,7 +261,7 @@
             height: calc(75% + 20vw);
         }
         } 
-/* end: background derriere header et slider
+/* end: background derriere header et slider*
 
 /* start: slider--------------------------------------------------------------- */
         .carousel {
@@ -628,9 +628,6 @@
 /*--start -- section 2 => event--------*/ 
 
         #Tarifs {
-            position: relative;
-            top: 3rem;
-            left: 0;
             width: 100%;
             height: 100%;
         }
@@ -843,17 +840,14 @@
 
 /*--start -- section 3 => evenement --------*/ 
         #Evenement {
-            position: relative;
-            top: calc(13rem + 0.3vw);
-            left: 0;
             width: 100%;
             height: 100%;
-            /* background-color: #C14E2A; a rectifier */
+            margin-top: 10rem;
         }
 
         @media screen and (min-width: 991px) {
             #Evenement {
-                top: calc(30rem + 0.3vw);
+                margin-top: calc(30rem + 0.3vw);
             }
         }
 
@@ -981,16 +975,13 @@
 
 /*--start -- section 4 => qui sommes-nous  --------*/ 
         #Sommes-nous {
-            position: relative;
-            top: calc(16rem + 0.3vw);
-            left: 0;
             background-color: var(--color-bg-main);
+            margin-top: calc(5rem + 0.4vw);
         }
 
         @media screen and (min-width: 990px) {
             #Sommes-nous {
                 top: calc(34rem + 0.3vw);
-                left: 0;
                 width: 100%;
                 height: 100%;
             }           
@@ -1075,6 +1066,7 @@
             width: 90vw;
             padding: 0.5rem;
             margin-top: 5rem;
+            margin-bottom: 3rem;
             background: linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
             border-radius: 10PX;
         }
@@ -1089,6 +1081,7 @@
         @media screen and (min-width: 400px) {
             .statistics-uppa  {
                 width: 79vw;
+                margin-bottom: 4rem;
             }       
         }
         @media screen and (min-width: 600px) {
@@ -1177,16 +1170,33 @@
 
     .svg-footer {
         position: relative;
-        bottom: 0;
+        bottom: -0.2rem;
         left: 0;
         width: 100%;
     }
 /*-----start:  footer-------------------------------------------------------------*/
         footer {
             position: relative;
-            bottom: 0;
+            top: 0;
+            bottom:0;
             width: 100%;
+            height: 100%;
             background-color: #8B572A;
+        }
+
+
+
+        /*couleur a changer penser a ajuster footer et integrer les link */
+        .footer-container p,
+        .footer-container h3 {
+             color: #fbfbfb; 
+        }
+
+        .network a {
+            text-decoration: none;
+        }
+        .copyright p {
+            margin-bottom: 0!important;
         }
 
 /*-----end : footer-------------------------------------------------------------*/
