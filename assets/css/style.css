@@ -18,6 +18,8 @@
         --color-card-bg: rgb(234, 234, 227);
         --color-card-list-text:  #0b0b0b;
         --color-icon:#B197FC; 
+        /*section-4*/
+        --color-gradient-card:  linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
 
         /* size */
         --size-h1: calc(1.45rem + 0.8vw);
@@ -238,6 +240,8 @@
 
         main {
             background-color: var(--color-bg-main);
+            width: 100%!important;
+            height: 100%!important;
         }
 
 /* start: background derriere header et slider */
@@ -806,7 +810,7 @@
             transform: perspective(600px) rotateY(180deg);
             background-color: #24293E;
             padding: 15px;
-            color: #F2F2F2;
+            color: var(--color-txt-slider);
         }
 
         .back ul li {
@@ -974,10 +978,201 @@
     /* End ---btn-event effect hover and click*/ 
         
 /*--end -- section 3 => evenement --------*/ 
-        .space {
-            width: 100%;
-            height: 800px; 
-        } 
 
+/*--start -- section 4 => qui sommes-nous  --------*/ 
+        #Sommes-nous {
+            position: relative;
+            top: calc(16rem + 0.3vw);
+            left: 0;
+            background-color: var(--color-bg-main);
+        }
+
+        @media screen and (min-width: 990px) {
+            #Sommes-nous {
+                top: calc(34rem + 0.3vw);
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }           
+        }
+
+        .container-Sommes-nous {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container-Sommes-nous h2 {
+            border-bottom: 4px solid rgb(58, 113, 58);
+            line-height: calc(3rem + 0.3vw);
+        }
+
+        .content-text {
+            position: relative;
+            margin-top: 4rem;
+            max-width: 90vw; 
+            border-radius: 10px;
+            background:rgba(35, 87, 30, 0.655);
+            box-shadow: 1px 2px 15px 3px rgba(0, 0, 0, 0.58), 0px -1px 2px 2px #ffffff inset;      
+        }
+
+        @media  screen and (min-width: 500px) {
+            .content-text {
+                max-width: 500px!important;
+            }           
+        }
+
+        @media  screen and (min-width: 768px) {
+            .content-text {
+                max-width: 600px!important;
+            }           
+        }
+       
+
+        .content-text img {
+            position: absolute;
+            width: 100%; 
+            width: 100px;
+            top: -3rem;
+            right: -3rem;
+            height: 100px;
+            border-radius: 50%;  
+            object-fit: cover;    
+        }
+
+        .content-text p {
+            padding: 10px;
+            font-size: var(--size-P-main);
+        }
+
+        blockquote {
+            position: relative;
+            font-style: italic;
+            border-left: 5px solid var(--color-bg-main);
+            padding: 1rem;
+        }
+
+        blockquote:before,
+        blockquote:after {
+            color: var(--color-bg-main); 
+            font-size: 4rem; 
+            position: absolute;
+        }
+
+        blockquote:before {
+            content: "“"; 
+            top: -2rem; 
+            left: -7px; 
+        }
+
+        blockquote:after {
+            content: "”";
+            bottom: -3rem; 
+            right: 8px; 
+        }
+/*deuxieme partie de qui sommes-nous avec les statistiques de l'association */
+
+        .statistics-uppa {
+            width: 90vw;
+            padding: 0.5rem;
+            margin-top: 5rem;
+            background: linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
+            border-radius: 10PX;
+        }
+    
+
+        .statistics-uppa p {
+            margin: 0;
+            padding: 0;
+            font-size: var(--size-P-main);
+        }
+
+        @media screen and (min-width: 400px) {
+            .statistics-uppa  {
+                width: 79vw;
+            }       
+        }
+        @media screen and (min-width: 600px) {
+            .statistics-uppa  {
+                width: 67vw;
+            }       
+        }
+        @media screen and (min-width: 900px) {
+            .statistics-uppa  {
+                width: 51vw;
+            }       
+        }
+
+        .container-about-card {
+            width: 100%; 
+            height: 100%;
+            padding: 0.7rem;
+        }
+        @media screen and (min-width: 338px) {
+            .container-about-card {
+                max-width: 800px;
+            }
+        }
+
+        .card-adherent,
+        .card-benevole,
+        .card-rdv {
+            position: relative;
+            border: 3px solid hsl(0, 100%, 100%);
+            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
+            font-size: var(--size-P-main);
+            padding: 0.1rem;
+        }
+        
+        .card-adherent p:first-of-type,
+        .card-benevole p:first-of-type,
+        .card-rdv p:first-of-type {
+            text-decoration: underline;
+            font-weight: 900;
+            color: rgb(85, 26, 180);
+            font-size: var(--size-title-2);
+            padding-top: 1rem;
+        }
+
+        @media screen and (min-width: 338px) {
+            .card-adherent,
+            .card-benevole,
+            .card-rdv {
+                width: calc(7rem + 2vw)!important;
+            }          
+        }
+
+        @media screen and (min-width: 450px) {
+            .card-adherent,
+            .card-benevole,
+            .card-rdv {
+                padding: 0.7rem;
+            }    
+        }
+
+        .img-adherent,
+        .img-rdv,
+        .img-benevole {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);        
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        .img-adherent {
+            background-color: #B1D754;
+        }
+        .img-rdv {
+            background-color: var(--color-bg-sect-1);
+        }
+        .img-benevole {
+            background-color: #013329;
+        }
+      
+
+
+/*--end -- section 4 => qui sommes-nous  --------*/ 
 /*-----end main-------------------------------------------------------------*/
  /* comm git penser a changer les accents */
