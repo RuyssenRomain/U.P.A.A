@@ -18,6 +18,8 @@
         --color-card-bg: rgb(234, 234, 227);
         --color-card-list-text:  #0b0b0b;
         --color-icon:#B197FC; 
+        /*section-4*/
+        --color-gradient-card:  linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
 
         /* size */
         --size-h1: calc(1.45rem + 0.8vw);
@@ -1072,7 +1074,8 @@
         .statistics-uppa {
             width: 90vw;
             padding: 0.5rem;
-            background-image: linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
+            margin-top: 5rem;
+            background: linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
             border-radius: 10PX;
         }
     
@@ -1101,30 +1104,73 @@
 
         .container-about-card {
             width: 100%; 
-            background-color: #24293E;
             height: 100%;
+            padding: 0.7rem;
+        }
+        @media screen and (min-width: 338px) {
+            .container-about-card {
+                max-width: 800px;
+            }
         }
 
         .card-adherent,
         .card-benevole,
         .card-rdv {
             position: relative;
-            width: 33.333%;
-            height: 100px;
-            background-color: #543525;
-
+            border: 3px solid hsl(0, 100%, 100%);
+            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
+            font-size: var(--size-P-main);
+            padding: 0.1rem;
+        }
+        
+        .card-adherent p:first-of-type,
+        .card-benevole p:first-of-type,
+        .card-rdv p:first-of-type {
+            text-decoration: underline;
+            font-weight: 900;
+            color: rgb(85, 26, 180);
+            font-size: var(--size-title-2);
+            padding-top: 1rem;
         }
 
-        .img-about {
+        @media screen and (min-width: 338px) {
+            .card-adherent,
+            .card-benevole,
+            .card-rdv {
+                width: calc(7rem + 2vw)!important;
+            }          
+        }
+
+        @media screen and (min-width: 450px) {
+            .card-adherent,
+            .card-benevole,
+            .card-rdv {
+                padding: 0.7rem;
+            }    
+        }
+
+        .img-adherent,
+        .img-rdv,
+        .img-benevole {
             position: absolute;
             top: 0%;
             left: 50%;
             border-radius: 50%;
-            background-color: green;
             transform: translate(-50%, -50%);        
-            width: 30px;
-            height: 30px;
+            width: 3.5rem;
+            height: 3.5rem;
         }
+
+        .img-adherent {
+            background-color: #B1D754;
+        }
+        .img-rdv {
+            background-color: var(--color-bg-sect-1);
+        }
+        .img-benevole {
+            background-color: #013329;
+        }
+      
 
 
 /*--end -- section 4 => qui sommes-nous  --------*/ 
