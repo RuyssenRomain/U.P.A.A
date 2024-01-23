@@ -261,7 +261,7 @@
             height: calc(75% + 20vw);
         }
         } 
-/* end: background derriere header et slider
+/* end: background derriere header et slider*
 
 /* start: slider--------------------------------------------------------------- */
         .carousel {
@@ -628,9 +628,6 @@
 /*--start -- section 2 => event--------*/ 
 
         #Tarifs {
-            position: relative;
-            top: 3rem;
-            left: 0;
             width: 100%;
             height: 100%;
         }
@@ -797,7 +794,7 @@
         }
         .front {
             transform: perspective(600px) rotateY(0deg);
-            box-shadow: 0 5px 10px black;/*a rectifier */
+            box-shadow: 0 5px 10px black;
         }
 
         .front img {
@@ -843,17 +840,14 @@
 
 /*--start -- section 3 => evenement --------*/ 
         #Evenement {
-            position: relative;
-            top: calc(13rem + 0.3vw);
-            left: 0;
             width: 100%;
             height: 100%;
-            /* background-color: #C14E2A; a rectifier */
+            margin-top: 10rem;
         }
 
         @media screen and (min-width: 991px) {
             #Evenement {
-                top: calc(30rem + 0.3vw);
+                margin-top: calc(30rem + 0.3vw);
             }
         }
 
@@ -895,6 +889,7 @@
             background-size: cover;   
             height: calc(5rem + 8vw);
             width: 100%;  
+            box-shadow: 3px 2px 9px 2px rgba(0, 0, 0, 0.57);
         }
 
         .box-rempoissonement::before,
@@ -981,16 +976,13 @@
 
 /*--start -- section 4 => qui sommes-nous  --------*/ 
         #Sommes-nous {
-            position: relative;
-            top: calc(16rem + 0.3vw);
-            left: 0;
             background-color: var(--color-bg-main);
+            margin-top: calc(5rem + 0.4vw);
         }
 
         @media screen and (min-width: 990px) {
             #Sommes-nous {
                 top: calc(34rem + 0.3vw);
-                left: 0;
                 width: 100%;
                 height: 100%;
             }           
@@ -1075,6 +1067,7 @@
             width: 90vw;
             padding: 0.5rem;
             margin-top: 5rem;
+            margin-bottom: 3rem;
             background: linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
             border-radius: 10PX;
         }
@@ -1089,6 +1082,7 @@
         @media screen and (min-width: 400px) {
             .statistics-uppa  {
                 width: 79vw;
+                margin-bottom: 4rem;
             }       
         }
         @media screen and (min-width: 600px) {
@@ -1171,8 +1165,106 @@
             background-color: #013329;
         }
       
-
-
-/*--end -- section 4 => qui sommes-nous  --------*/ 
+/*--end -- section 4 => qui sommes-nous  --------*/
+ 
 /*-----end main-------------------------------------------------------------*/
- /* comm git penser a changer les accents */
+
+    .svg-footer {
+        position: relative;
+        bottom: -0.2rem;
+        left: 0;
+        width: 100%;
+    }
+/*-----start:  footer-------------------------------------------------------------*/
+        footer {
+            position: relative;
+            top: 0;
+            bottom:0;
+            width: 100%;
+            height: 100%;
+            background-color: #8B572A;
+        }
+
+        /*couleur a changer penser a ajuster footer et integrer les link */
+        .footer-container p,
+        .footer-container a,
+        .footer-container h3 {
+             color: #fbfbfb; 
+        }
+
+        .footer-container h3 {
+            text-decoration: underline;
+        }
+
+        .about,
+        .adress,
+        .network {
+            padding-top: 3rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            .about,
+            .adress,
+            .network {
+                padding-top: 1rem;
+            }
+        }
+       
+        .about a {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+            text-decoration: none;
+            transition: all 0.35s ease-in-out;
+        }
+
+        .about a span {
+            position: relative;
+        }
+
+        .about a span::before {
+            content: "";
+            position: absolute;
+            bottom: 2%;
+            left: 0%;         
+            height: 2px;
+            width: 100%;
+            background-color: #fbfbfb;
+            transform: scale(0);
+            transform-origin: center;
+            transition: all 0.35s ease-in-out;         
+        }
+
+        .about a span:hover::before {
+            transform: scale(1);
+        }
+        
+
+        .footer-link {
+            width: 100%;
+        }
+        
+        .footer-link a {
+            width: calc(5rem + 0.3vw);
+            margin-top: 0.5rem;
+        }
+
+        .copyright {
+            padding-top: 3rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            .copyright {
+                text-align: initial;
+                padding: 0.5rem;
+            }
+        }
+
+        .copyright p {
+            margin-bottom: 0!important;
+        }
+     
+
+/*-----end : footer-------------------------------------------------------------*/
