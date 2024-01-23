@@ -87,15 +87,17 @@
             margin-right: 1rem!important;
             }   
         }
+
         @media (min-width: 768px) and (max-width: 1199px) {
             .container-header {
             margin-left: 3rem!important;
             margin-right: 3rem!important;
             }   
         }
+
         @media (min-width: 1200px){
             .container-header {
-            margin-left: 1rem!important;
+            margin-left: 0rem!important;
             margin-right: 1rem!important;
             }   
         }
@@ -134,7 +136,6 @@
         }
 
 /*------menu burger open -------------------------------------*/
-  
         @media (max-width: 1200px) { 
             .navbar-toggler:not(.collapsed) ~ .offcanvas-end .offcanvas-body {
                 background-color: var(--color-header);
@@ -156,8 +157,7 @@
             font-size: var(--size-h2-offcanvas)!important
         }
         .offcanvas-body {
-            overflow: hidden!important;
-         
+            overflow: hidden!important;      
         }
         
         .nav-link {
@@ -185,7 +185,6 @@
         .navbar-nav .nav-link:hover,
         .navbar-nav .nav-link.active:hover {
             padding: 0.5rem;
-            transform: scale(1.15);
         }
 
         .navbar-nav .nav-link:hover::after,
@@ -194,26 +193,24 @@
         }
 
         @media screen and (max-width : 1200px) {
-            .navbar-nav .nav-link {
-                margin-top: 0.5rem;
-            }
-
+            
             .navbar-nav .nav-link:hover::after,
             .navbar-nav .nav-link.active:hover::after {
                 transform-origin: left;
             }
         }
+
         .navbar-nav .nav-link.active:hover {
             transform: scale(1.15) translateX(-15px);
         }
         
         @media (max-width: 1200px) {
-            .navbar-nav .nav-link:hover{
-                transform: scale(1.15) translateX(10px);
-            }
+            .navbar-nav .nav-link:hover {
+                transform: scale(1.15);
 
+            } 
             .navbar-nav .nav-link.active:hover {
-                transform: scale(1.15) translateX(10px); 
+                transform: scale(1.15)  
             }
         }
 
