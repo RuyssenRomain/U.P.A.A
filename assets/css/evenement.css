@@ -34,3 +34,28 @@
     --weight-medium: 500; 
 }
 /* -------- END VARIABLE -----------------------*/
+
+/* start: header */
+@media screen and (min-width: 1200px) {
+    .container-header {
+        margin-left: 3rem!important;
+        margin-right: 3rem!important;
+    }
+}
+    
+/*------menu burger open -------------------------------------*/
+    .navbar-toggler:not(.collapsed) ~ .offcanvas-end .offcanvas-body {
+        background-color: var(--color-header);
+    }
+    .navbar-nav .nav-link:hover {
+        transform-origin: center;
+    }
+    .navbar-nav .nav-link:hover {
+        transform: scale(1.15) translate(5px);
+
+    } 
+    .navbar-nav .nav-link.active:hover {
+        transform: scale(1.15) translate(5px);
+    }
+/*------ end: menu burger open -------------------------------------*/
+/* end: header */
