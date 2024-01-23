@@ -1187,12 +1187,15 @@
 
         /*couleur a changer penser a ajuster footer et integrer les link */
         .footer-container p,
+        .footer-container a,
         .footer-container h3 {
              color: #fbfbfb; 
         }
+
         .footer-container h3 {
             text-decoration: underline;
         }
+
         .about,
         .adress,
         .network {
@@ -1207,6 +1210,38 @@
             }
         }
        
+        .about a {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+            text-decoration: none;
+            transition: all 0.35s ease-in-out;
+        }
+
+        .about a span {
+            position: relative;
+        }
+
+        .about a span::before {
+            content: "";
+            position: absolute;
+            bottom: 2%;
+            left: 0%;         
+            height: 2px;
+            width: 100%;
+            background-color: #fbfbfb;
+            transform: scale(0);
+            transform-origin: center;
+            transition: all 0.35s ease-in-out;         
+        }
+
+        .about a span:hover::before {
+            transform: scale(1);
+        }
+        
+
         .footer-link {
             width: 100%;
         }
