@@ -2,38 +2,14 @@
 
 :root {
     /* color */
-    --color-header: #586654;
-    --color-header-opacity: rgba(88, 102, 84, 1);
-    --color-burger-menu: #543525;
-    --color-offcanvas-header:rgba(229, 230, 219, 0.998) ;
-    --color-offcanvas-tittle :#363636;
-    --color-offcanvas-tittle-opacity :rgba(54, 54, 54, 0.849);
-    --color-burger-text: #FFB26F;
     /* main */
+    --color-header: #586654;
+    --color-burger-menu: #543525;
+    --color-burger-text: #FFB26F;
     --color-bg-main: #e7e7e7e6;
-    --color-txt-slider:#F2F2F2;
-    --color-a-permit:blueviolet;
-    /* section-1*/
-    --color-bg-sect-1 : #6e8be2;
-    --color-card-bg: rgb(234, 234, 227);
-    --color-card-list-text:  #0b0b0b;
-    --color-icon:#B197FC; 
-    /*section-4*/
-    --color-gradient-card:  linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
-    /*footer*/
-    --color-bg-footer: #8B572A;
-
     /* size */
-    --size-h1: calc(1.45rem + 0.8vw);
-    --size-h2-offcanvas: clamp(1.2rem, 4vw, 1.35rem);
-    --size-title-slider: calc(1rem + 0.3vw);
-    --size-btn-slider:clamp(0.625rem, 3.1vw, 1rem);
-    --size-P-slider:clamp(1rem, 2.2vw, 1.15rem);
-    --size-title-2: calc(1.25rem + 1vw);
-    --size-icons: 24px;  
+    --size-title-2: calc(1.25rem + 1vw); 
     --size-P-main: calc(1rem + 0.3vw); 
-    /*weight*/
-    --weight-medium: 500; 
 }
 /* -------- END VARIABLE -----------------------*/
 
