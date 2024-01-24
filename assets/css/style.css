@@ -73,8 +73,30 @@
 
 /* ----------------START HEADER ------------- */
         .logo {
-            width: clamp(5rem, 10vw, 9rem);
+            width: 5rem;
         }
+        
+        @media screen and (min-width: 500px) {
+            .logo {
+                width: 6rem;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            .logo {
+                width: 7rem;
+            }
+        }
+        @media screen and (min-width: 990px) {
+            .logo {
+                width: 8rem;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .logo {
+                width: 9rem;
+            }
+        }
+       
 
         .container-header {
             margin-left: 0rem!important;
@@ -262,10 +284,34 @@
 
 /* start: slider--------------------------------------------------------------- */
         .carousel {
-            top: clamp(6.5rem, 12.5vw, 10.65rem);
+            top: 6.5rem;
             left: 0;
             width:48%;
             height: 100%;
+        }
+
+        @media screen and (min-width: 500px) {
+            .carousel {
+                top: 7.5rem;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .carousel {
+                top: 8.5rem;
+            }
+        }
+        
+        @media screen and (min-width: 990px) {
+            .carousel {
+                top: 9rem;
+            }
+        }
+
+        @media screen and (min-width: 990px) {
+            .carousel {
+                top: 9.5rem;
+            }
         }
 
         @media screen and (max-width:1200px) {
@@ -441,6 +487,7 @@
         background-color: var(--color-bg-sect-1);
         top: 9.7rem;
         height: 100%!important;
+        scroll-margin-top: 11rem;
        }
 
        .water-intro {
@@ -627,6 +674,7 @@
         #Tarifs {
             width: 100%;
             height: 100%;
+            scroll-margin-top: 3rem;
         }
 
         .custom-tarif-img {
@@ -840,6 +888,25 @@
             width: 100%;
             height: 100%;
             margin-top: 10rem;
+            scroll-margin-top: 7rem;
+        }
+
+        @media screen and (min-width: 500px) {
+            #Evenement {
+                scroll-margin-top: 8.5rem;
+            } 
+        }
+
+        @media screen and (min-width: 990px) {
+            #Evenement {
+                scroll-margin-top: 10rem;
+            } 
+        }
+
+        @media screen and (min-width: 1000px) {
+            #Evenement {
+                scroll-margin-top: 13rem;
+            } 
         }
 
         @media screen and (min-width: 991px) {
@@ -904,6 +971,7 @@
           }
 
         .box-date {
+            font-weight: var(--weight-medium);
             z-index: 2;
             background-color: #d8a355;
             border-right:2px solid #0b0b0b;
@@ -975,6 +1043,18 @@
         #Sommes-nous {
             background-color: var(--color-bg-main);
             margin-top: calc(5rem + 0.4vw);
+            scroll-margin-top: 7.5rem;
+        }
+
+        @media screen and (min-width: 500px) {
+            #Sommes-nous {
+                scroll-margin-top: 8.5rem;
+            } 
+        }
+        @media screen and (min-width: 768px) {
+            #Sommes-nous {
+                scroll-margin-top: 9.5rem;
+            } 
         }
 
         @media screen and (min-width: 990px) {
