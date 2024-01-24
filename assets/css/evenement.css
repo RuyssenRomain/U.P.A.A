@@ -127,19 +127,22 @@
 
     .event-illustration {
         position: relative;
+        width: 100%;
+    }
+    
+    @media screen and (min-width: 900px) {
+        .event-illustration {
+            width: 85%;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .event-illustration {
+            width: 80%;
+        }
     }
 
     .event-illustration figure {
-        width: 100%;
-        height: 100%;
-        flex-shrink: 0;
-    }
-
-    @media screen and (min-width: 768px) {
-        .event-illustration figure {
-            width: 50%;
-            position: relative;
-        }
+        position: relative; 
     }
     
     .event-illustration figure img {
@@ -148,30 +151,46 @@
         object-fit: cover;
     }
 
+    @media screen and (min-width: 450px) {
+        .event-illustration figure img {
+            height: 350px; /* ou toute autre hauteur que vous jugez appropriée */
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .event-illustration figure img {
+            max-height: 400px; /* ou toute autre hauteur que vous jugez appropriée */
+        }
+    }
+
     .event-title {
         position: absolute;
-        width: 80%;
-        top:calc(1.2rem + 0.3vw);
+        top:19px;
         left: 50%;
+        width: 75%;
         transform: translate(-50%, -50%);
         background-color: #e67b1ea3;
     }
 
-     @media screen and (min-width: 610px) {
+     @media screen and (min-width: 768px) {
         .event-title {
-            top: calc(1.3rem + 0.3vw)
+            top: 22px
         }
     } 
      @media screen and (min-width: 1200px) {
         .event-title {
-            top: calc(1.4rem + 0.3vw)
+            top: 25px
         }
     } 
 
-    @media screen and (min-width: 1200px) {
+    .event-text {
+        letter-spacing: 2px;
+    }
+
+    @media screen and (min-width: 768px) {
         .event-text {
-            padding: 2rem;
-            width: 50%;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 /* end: main */
