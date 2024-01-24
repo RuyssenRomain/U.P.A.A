@@ -36,13 +36,14 @@
 /* -------- END VARIABLE -----------------------*/
 
 /* start: header */
-@media screen and (min-width: 1200px) {
-    .container-header {
-        margin-left: 3rem!important;
-        margin-right: 3rem!important;
+
+    @media screen and (min-width: 1200px) {
+        .container-header {
+            margin-left: 3rem!important;
+            margin-right: 3rem!important;
+        }
     }
-}
-    
+
 /*------menu burger open -------------------------------------*/
     .navbar-toggler:not(.collapsed) ~ .offcanvas-end .offcanvas-body {
         background-color: var(--color-header);
@@ -57,5 +58,244 @@
     .navbar-nav .nav-link.active:hover {
         transform: scale(1.15) translate(5px);
     }
+
 /*------ end: menu burger open -------------------------------------*/
 /* end: header */
+/* start: main */
+
+/* start: first-section */
+    main {
+        background-color: var(--color-bg-main);
+        width: 100%!important;
+        height: 100%!important;
+    }
+
+    #events {
+        position: relative;
+        top: 6rem;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-bg-main);
+        font-size: var(--size-P-main);
+    }
+
+    @media screen and (min-width:500px) {
+        #events {
+            top: 7rem;
+        }    
+    }
+
+    @media screen and (min-width: 768px) {
+         #events {
+             top: 8rem;
+         }    
+    }
+    @media screen and (min-width: 990px) {
+         #events {
+             top: 9rem;
+            }    
+    }    
+    @media screen and (min-width: 1200px) {
+         #events {
+             top: 10rem;
+            }    
+    }    
+    
+
+    #events nav {
+        width: 100%;
+        margin-top: 1.2rem;
+    }
+    #events nav li {
+        border-bottom: 2px solid var(--color-burger-menu);
+    }
+
+    @media screen and (min-width: 500px) {
+        #events nav {
+            margin-top: 2rem;
+        }
+    }
+
+    .breadcrumb-item a {
+        text-decoration: none;
+        color: var(--color-burger-menu);
+    }
+
+    .breadcrumb-item a:hover {
+        color: #8B572A;
+        text-decoration: underline;
+    }
+
+    .breadcrumb-item.active {
+        color: rgba(54, 54, 54, 0.849);
+    }
+
+    .event-illustration {
+        position: relative;
+        width: 100%;
+    }
+    
+    @media screen and (min-width: 900px) {
+        .event-illustration {
+            width: 85%;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .event-illustration {
+            width: 80%;
+        }
+    }
+
+    .event-illustration figure {
+        position: relative; 
+    }
+    
+    .event-illustration figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
+    }
+
+    @media screen and (min-width: 450px) {
+        .event-illustration figure img {
+            height: 350px; /* ou toute autre hauteur que vous jugez appropriée */
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .event-illustration figure img {
+            max-height: 400px; /* ou toute autre hauteur que vous jugez appropriée */
+        }
+    }
+
+    .event-title {
+        position: absolute;
+        top:19px;
+        left: 50%;
+        width: 75%;
+        transform: translate(-50%, -50%);
+        background-color: #e67b1ea3;
+    }
+
+     @media screen and (min-width: 768px) {
+        .event-title {
+            top: 22px
+        }
+    } 
+     @media screen and (min-width: 1200px) {
+        .event-title {
+            top: 25px
+        }
+    } 
+
+    @media screen and (min-width: 768px) {
+        .event-text {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            letter-spacing: 2px;
+        }
+    }
+/* end: first-section */
+/*start: section date a venir */
+    .events-date {
+        position: relative;
+        top: 15rem;
+        left: 0;
+        background-color: #D9CCC7;
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
+    }
+
+    @media screen and (min-width: 768px) {
+        .events-date {
+            top: 8rem;
+        }
+    }
+  
+    .events-date h2 {
+        font-size: calc(2.5rem + 0.3vw);
+        color: rgb(53, 52, 52);
+        text-decoration: underline;
+    }
+
+    .date-container {
+        position: relative;
+    }
+
+    .box-date-1,
+    .date-title {
+        position: absolute;
+    }
+
+    .box-date-1 {
+        width: calc(4rem + 0.3vw);
+        height: calc(4rem + 0.3vw);
+        top: calc(0.5rem + 0.3vw);
+        left: calc(1rem + 0.3vw);
+        background-color: var(--color-burger-text);
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
+        font-size: calc(1.35rem + 0.3vw);
+    }
+
+   @media  screen and (min-width: 500px) {
+    .box-date-1 {
+        width: calc(6rem + 0.3vw);
+        height: calc(6rem + 0.3vw);
+    }
+   }
+
+    .date-title {
+        bottom: 0rem;
+        right: 1rem;
+        height: auto;
+    }
+
+    .date-title h3 span {
+        background-color: var(--color-burger-text);
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
+    }
+
+    @media screen and (min-width: 500px) {
+        .date-title h3 span {
+          font-size: var(--size-title-2);
+        }
+    }
+    
+    .date-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .date-container-text {
+        font-size: var(--size-P-main);
+    }
+
+/* line entre les differents evenements  */
+
+    .line {
+        display: block;
+        height: 5px;
+        width: 50%;
+        background-color: #543525;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .svg-footer {
+        position: relative;
+        bottom: -16.2rem;
+        left: 0;
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+        top: 16rem;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #8B572A;
+    }
+/* end: section date a venir */
+/* end: main */
