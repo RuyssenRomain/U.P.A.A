@@ -106,6 +106,9 @@
         width: 100%;
         margin-top: 1.2rem;
     }
+    #events nav li {
+        border-bottom: 2px solid var(--color-burger-menu);
+    }
 
     @media screen and (min-width: 500px) {
         #events nav {
@@ -266,6 +269,17 @@
 
     .date-container-text {
         font-size: var(--size-P-main);
+    }
+
+/* line entre les differents evenements  */
+
+    .line {
+        display: block;
+        height: 5px;
+        width: 50%;
+        background-color: #543525;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 
     .svg-footer {
