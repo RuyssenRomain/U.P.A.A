@@ -72,5 +72,5 @@ For any questions or suggestions, please contact:
 - ruyssensud@gmail.com
 
 
-![Capture d'Écran de l'Accueil](chemin/vers/la/capture1.png)
-![Capture d'Écran des Événements](chemin/vers/la/capture2.png)
+![Capture d'Écran de l'Accueil](./img/caption/home.page.webp)
+![Capture d'Écran des Événements](./img/caption/event-page.webp)
