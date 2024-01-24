@@ -971,6 +971,7 @@
           }
 
         .box-date {
+            font-weight: var(--weight-medium);
             z-index: 2;
             background-color: #d8a355;
             border-right:2px solid #0b0b0b;
