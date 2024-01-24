@@ -20,6 +20,8 @@
     --color-icon:#B197FC; 
     /*section-4*/
     --color-gradient-card:  linear-gradient(to right, rgba(99, 162, 65, 1), rgba(177, 215, 84, 1));
+    /*footer*/
+    --color-bg-footer: #8B572A;
 
     /* size */
     --size-h1: calc(1.45rem + 0.8vw);
@@ -74,7 +76,7 @@
         position: relative;
         top: 6rem;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: var(--color-bg-main);
         font-size: var(--size-P-main);
     }
@@ -122,7 +124,7 @@
     }
 
     .breadcrumb-item a:hover {
-        color: #8B572A;
+        color: var(--color-bg-footer);
         text-decoration: underline;
     }
 
@@ -154,7 +156,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
     }
 
     @media screen and (min-width: 450px) {
@@ -200,15 +201,14 @@
 /*start: section date a venir */
     .events-date {
         position: relative;
-        top: 15rem;
+        top: 8rem;
         left: 0;
         background-color: #D9CCC7;
-        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
     }
 
     @media screen and (min-width: 768px) {
         .events-date {
-            top: 8rem;
+            top: 15rem;
         }
     }
   
@@ -233,7 +233,6 @@
         top: calc(0.5rem + 0.3vw);
         left: calc(1rem + 0.3vw);
         background-color: var(--color-burger-text);
-        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
         font-size: calc(1.35rem + 0.3vw);
     }
 
@@ -252,7 +251,6 @@
 
     .date-title h3 span {
         background-color: var(--color-burger-text);
-        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
     }
 
     @media screen and (min-width: 500px) {
@@ -295,7 +293,7 @@
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-color: #8B572A;
+        background-color: var(--color-bg-footer);
     }
 /* end: section date a venir */
 /* end: main */

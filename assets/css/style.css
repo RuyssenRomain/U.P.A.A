@@ -53,6 +53,11 @@
             font-size: var(--size-title-2);
         }
 
+        .effect-shadow {
+            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
+        }
+
+
 /*------CLASSE GENRERAL-----END -------------------*/
 
     body {
@@ -1189,7 +1194,6 @@
         .card-rdv {
             position: relative;
             border: 3px solid hsl(0, 100%, 100%);
-            box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.55);
             font-size: var(--size-P-main);
             padding: 0.1rem;
         }
