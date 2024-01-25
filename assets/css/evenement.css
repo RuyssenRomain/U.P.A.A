@@ -42,11 +42,6 @@
 /* start: main */
 
 /* start: first-section */
-    main {
-        background-color: var(--color-bg-main);
-        width: 100%!important;
-        height: 100%!important;
-    }
 
     #events {
         position: relative;
