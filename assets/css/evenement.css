@@ -131,7 +131,8 @@
     .event-illustration figure img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
     @media screen and (min-width: 450px) {
@@ -238,7 +239,8 @@
     .date-container img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
     .date-container-text {
@@ -255,7 +257,9 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
-
+/* end: section date a venir */
+/* end: main */
+/* start: footer */
     .svg-footer {
         position: relative;
         bottom: -16.2rem;
@@ -271,5 +275,4 @@
         height: 100%;
         background-color: var(--color-bg-footer);
     }
-/* end: section date a venir */
-/* end: main */
+/* end: footer */
