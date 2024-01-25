@@ -18,7 +18,7 @@
 
 /* start: first-section */
 
-    #mentions {
+    #politiques {
         position: relative;
         top: 6rem;
         width: 100%;
@@ -28,43 +28,43 @@
     }
 
     @media screen and (min-width:500px) {
-        #mentions {
+        #politiques {
             top: 7rem;
         }    
     }
 
     @media screen and (min-width: 768px) {
-         #mentions {
+         #politiques {
              top: 8rem;
          }    
     }
     @media screen and (min-width: 990px) {
-         #mentions {
+         #politiques {
              top: 9rem;
             }    
     }    
     @media screen and (min-width: 1200px) {
-         #mentions {
+         #politiques {
              top: 10rem;
             }    
     }    
     
 
-    #mentions nav {
+    #politiques nav {
         width: 100%;
         margin-top: 1.2rem;
     }
-    #mentions nav li {
+    #politiques nav li {
         border-bottom: 2px solid var(--color-burger-menu);
     }
 
     @media screen and (min-width: 500px) {
-        #mentions nav {
+        #politiques nav {
             margin-top: 2rem;
         }
     }
 
-    .container-mentions {
+    .container-politiques {
         position: relative;
         top: 7rem;
         left: 0;
@@ -73,41 +73,41 @@
     }
     
     @media screen and (min-width: 500px) {
-        .container-mentions {
+        .container-politiques {
             top: 8rem;           
         }
     }
 
     @media screen and (min-width: 768px) {
-        .container-mentions {
+        .container-politiques {
             top: 10rem;           
         }   
     }
 
     @media screen and (min-width: 990px) {
-        .container-mentions {
+        .container-politiques {
             top: 11rem;           
         }   
     }
     @media screen and (min-width: 1200px) {
-        .container-mentions {
+        .container-politiques {
             top: 13rem;           
         }   
     }
 
-    .container-mentions  h2 {
+    .container-politiques  h2 {
         font-size: calc(1.6rem + 1vw) ;
         text-decoration: underline;
         
     }
 
     @media screen and (min-width: 768px) {
-        .container-mentions  h2 {
+        .container-politiques  h2 {
             margin-bottom: 4.5rem!important;
         }
     }
     
-    .container-mentions  h3 {
+    .container-politiques  h3 {
         font-size: var(--size-title-2);
         
     }
